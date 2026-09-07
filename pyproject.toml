@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hsi-project"
+version = "0.1.0"
+description = "Scene planning, image keyposes, motion guidance and affordance memory"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "Pillow>=9", "jsonschema>=4"]
+
+[project.optional-dependencies]
+geometry = ["trimesh>=4", "pyrender>=0.1.45", "matplotlib>=3.6", "opencv-python>=4.7", "smplx>=0.1.28"]
+guidance = ["torch>=2.0", "PyYAML>=6"]
+test = ["pytest>=7"]
+
+[project.scripts]
+hsi = "hsi.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["hsi*"]
+
+[tool.setuptools.package-data]
+"hsi.stage3" = ["physical_release_policy.json", "causal_bridge_config.json", "README.md", "MOTION_REVIEW_STATUS.md"]
+"hsi.stage1" = ["ORIGINS.json", "README.md"]
+"hsi.stage1.scene_build" = ["ORIGINS.json"]
+"hsi.stage1.perception" = ["ORIGINS.json", "README.md"]
+"hsi.stage2" = ["README.md", "ORIGINS.json"]
+"hsi.memory" = ["README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,10 @@
+{
+  "remogen_root": "/path/to/ReMoGen",
+  "adapter_checkpoint": "/path/to/current-adapter.pt",
+  "base_checkpoint": "/path/to/released-hsi/checkpoint.pt",
+  "mvae_checkpoint": "/path/to/released-mvae/checkpoint.pt",
+  "primitive_config": "/path/to/primitive-config.yaml",
+  "statistics_directory": "/path/to/statistics-and-text-cache",
+  "scene_directory": "/path/to/scenes",
+  "clip_checkpoint": "/path/to/ViT-B-32.pt"
+}

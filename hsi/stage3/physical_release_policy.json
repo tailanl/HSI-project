@@ -1,0 +1,67 @@
+{
+  "schema": "p523.current_only_stage3_physical_release_policy.v2",
+  "status": "fail_closed",
+  "description": "Pre-render publication gate with exact official-compatible motion metrics and floor/structure collision decomposition.",
+  "gates": {
+    "execution.scheduler_complete": {"comparison": "true", "threshold": true},
+    "execution.all_nodes_consumed": {"comparison": "true", "threshold": true},
+    "execution.rolewise_terminal_complete": {"comparison": "true", "threshold": true},
+    "execution.rolewise_fail_closed_incomplete": {"comparison": "false", "threshold": false},
+    "execution.posthoc_motion_edit_used": {"comparison": "false", "threshold": false},
+    "terminal.root_xy_error_m.maximum": {"comparison": "max", "threshold": 0.1},
+    "terminal.root_z_error_m.maximum": {"comparison": "max", "threshold": 0.05},
+    "terminal.root_yaw_error_deg.maximum": {"comparison": "max", "threshold": 10.0},
+    "terminal.rolewise.declared_contact.tail_error_m.mean": {"comparison": "max", "threshold": 0.06},
+    "terminal.rolewise.declared_contact.tail_error_m.maximum": {"comparison": "max", "threshold": 0.1},
+    "terminal.full22_tail_error_m.mean": {"comparison": "max", "threshold": 0.1},
+    "terminal.full22_tail_error_m.p95": {"comparison": "max", "threshold": 0.16},
+    "terminal.full22_terminal_error_m.maximum": {"comparison": "max", "threshold": 0.2},
+    "terminal.rolewise.support_chain.tail_error_m.maximum": {"comparison": "max", "threshold": 0.2},
+    "terminal.rolewise.axial_posture.tail_error_m.maximum": {"comparison": "max", "threshold": 0.16},
+    "terminal.rolewise.upper_limb.tail_error_m.maximum": {"comparison": "max", "threshold": 0.2},
+    "route.root_to_route_distance_m.p95": {"comparison": "max", "threshold": 0.1},
+    "route.root_to_route_distance_m.maximum": {"comparison": "max", "threshold": 0.15},
+    "route.navigation_end_root_to_route_goal_m": {"comparison": "max", "threshold": 0.15, "optional_legacy_alias": "route.terminal_root_to_route_goal_m"},
+    "motion_quality.contact_foot_slip_m_per_s.mean": {"comparison": "max", "threshold": 0.1},
+    "motion_quality.contact_foot_slip_m_per_s.p95": {"comparison": "max", "threshold": 0.25},
+    "motion_quality.contact_foot_slip_m_per_s.maximum": {"comparison": "max", "threshold": 1.0},
+    "motion_quality.joint_jerk_rms_m_per_s3": {"comparison": "max", "threshold": 120.0},
+    "motion_quality.joint_jerk_m_per_s3.p95": {"comparison": "max", "threshold": 450.0},
+    "motion_quality.official_remogen_compatible.foot_skate_m_per_frame": {"comparison": "max", "threshold": 0.005},
+    "motion_quality.official_remogen_compatible.world_floor_any_foot_contact_consecutive_pair_fraction": {"comparison": "min", "threshold": 0.05},
+    "motion_quality.official_remogen_compatible.jerk_sequence_max_m_per_frame3": {"comparison": "max", "threshold": 0.2},
+    "scene_collision.decomposition.deep_floor_penetration.penetration_depth_m.maximum": {"comparison": "max", "threshold": 0.02, "none_means_zero": true},
+    "scene_collision.decomposition.structural_nonfloor_collision.forbidden_collision_fraction": {"comparison": "max", "threshold": 0.005},
+    "scene_collision.decomposition.structural_nonfloor_collision.forbidden_penetration_depth_m.maximum": {"comparison": "max", "threshold": 0.08, "none_means_zero": true}
+  },
+  "retained_strict_diagnostics_not_used_as_structural_collision_gate": {
+    "motion_quality.contact_foot_slip_m_per_s": "retained and still gated above; this is the prior z<0.10 contact-speed metric",
+    "motion_quality.joint_jerk_m_per_s3": "retained and still gated above; this is the prior FPS-scaled Euclidean jerk metric",
+    "scene_collision.forbidden_collision_fraction": "retained in every evaluation but includes the raw floor slab, so it is not the furniture/wall release gate",
+    "scene_collision.forbidden_penetration_depth_m.maximum": "retained in every evaluation but includes shallow floor contact"
+  },
+  "official_compatibility_threshold_note": {
+    "source_defines_metric_not_threshold": true,
+    "foot_skate_threshold_m_per_frame": "local P523 release limit; official ReMoGen evaluation defines the scalar but no pass threshold",
+    "jerk_threshold_m_per_frame3": "local P523 release limit; official ReMoGen evaluation defines the scalar but no pass threshold",
+    "contact_coverage_companion": "prevents a floating foot from receiving the vacuous official skate score of zero"
+  },
+  "ranking": {
+    "order": [
+      "eligible_first",
+      "hard_fail_count_ascending",
+      "normalized_violation_sum_ascending",
+      "terminal.full22_tail_error_m.mean_ascending",
+      "motion_quality.contact_foot_slip_m_per_s.mean_ascending",
+      "scene_collision.decomposition.structural_nonfloor_collision.forbidden_collision_fraction_ascending"
+    ],
+    "failed_candidate_can_never_be_selected": true
+  },
+  "post_render_delivery_gate": {
+    "fullmesh_scene_collision_required": true,
+    "fullmesh_structural_nonfloor_collision_fraction_max": 0.005,
+    "fullmesh_structural_nonfloor_penetration_depth_m_max": 0.08,
+    "note": "Run evaluation again with the corrected P519 skinned-vertex archive before final delivery."
+  }
+}
+

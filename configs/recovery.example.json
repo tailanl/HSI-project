@@ -1,0 +1,8 @@
+{
+  "hybrik_root": "/path/to/HybrIK",
+  "hybrik_config": "/path/to/hybrikx-config.yaml",
+  "hybrik_checkpoint": "/path/to/hybrikx-checkpoint.pth",
+  "detector_checkpoint": "/path/to/fasterrcnn-checkpoint.pth",
+  "neutral_smplx": "/path/to/SMPLX_NEUTRAL.npz",
+  "kid_template": "/path/to/smplx_kid_template.npy"
+}

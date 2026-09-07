@@ -1,0 +1,252 @@
+{
+  "schema": "hsi.stage2.static_source_origins.v1",
+  "historical_paths_are_provenance_only_not_runtime_dependencies": true,
+  "runtime_source_transformation_used": false,
+  "model_implementations_or_weights_packaged": false,
+  "groups": {
+    "view_config_geometry": {
+      "integrated_files": [
+        "_view_config.py",
+        "view_geometry.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p536_qwen_audited_stage12_20260904/code/build_stage2_view_audit_config_v1.py",
+          "sha256": "b5488d22dad25f326d744d4c6c5214a1a30298471f70bbbdf8391bb7936cfcf7"
+        },
+        {
+          "historical_source": "agent9/methods/p536_qwen_audited_stage12_20260904/code/run_qwen_stage2_view_audit_v1.py",
+          "sha256": "0c46ecb0118199cff4e9c3242d8d2befe098bb9fccd3d9400602be46a45139d6"
+        }
+      ]
+    },
+    "current_view_selector": {
+      "integrated_files": [
+        "views.py",
+        "view_numeric.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p549_fast_image_stage2_20260905/code/select_geometry_view.py",
+          "sha256": "598981a7505f4e0ee60ad62d569a0ffc008acd50a8f84ef68e688e08453d4e9c"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/select_mask_first_views.py",
+          "sha256": "a9f28891645fd9312344c638c3fa0f78d7d69e94aa4d0e7dac4b09c69e69b12b"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/select_contact_views.py",
+          "sha256": "d80ad21b874a496c5e6c2ad796cc17d981e2f07b781362751a6d381a9fafaaed"
+        },
+        {
+          "historical_source": "agent9/methods/p556_persistence_retest_20260907/code/select_memory_views_v1.py",
+          "sha256": "dd1a0ff632d8a7dba7eebd63f17e3b048628d3fdbf383cb94d3c7738beafba8a"
+        }
+      ]
+    },
+    "image_contract_job": {
+      "integrated_files": [
+        "image_contract.py",
+        "image_job.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p553_h3_single_image_20260906/code/h3_image_contract.py",
+          "sha256": "0878da9e8986b996bf9bb47a0de908fd0c3048f1b77bdad4466d8aa78c23e9e6"
+        },
+        {
+          "historical_source": "agent9/methods/p553_h3_single_image_20260906/code/make_single_image_job.py",
+          "sha256": "dcf65ee3c9f945d4a179a6350eb3a9d42dfc600bcb697fc6620b8a81a337d655"
+        }
+      ]
+    },
+    "hybrik_recovery": {
+      "integrated_files": [
+        "recovery.py",
+        "recovery_contract.py",
+        "projection.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p533_h3_hybrikx_hybrid_stage2_20260903/code/run_hybrikx_articulation_v1.py",
+          "sha256": "9ef71d38b52bdf71bee52b9eecf32f088b3a67c63d8d589ddea36e27cbe96c2e"
+        },
+        {
+          "historical_source": "agent9/methods/p533_h3_hybrikx_hybrid_stage2_20260903/code/p533_contract_v1.py",
+          "sha256": "8ad954f6dec9b71302662008df165ad4e57d6f54bc7a07e48a14d43f0248f115"
+        },
+        {
+          "historical_source": "agent9/methods/p533_h3_hybrikx_hybrid_stage2_20260903/code/build_projection_observation_v1.py",
+          "sha256": "e8d1c704eed3fcba8c0884974da9e508ba340af9fb164f0fd673014fe639b580"
+        },
+        {
+          "historical_source": "agent9/methods/p553_h3_single_image_20260906/code/image_numeric_bridge.py",
+          "sha256": "d0e56f962c0ee411832f65fdb9d2162ae99eff7f7817a8f14bdaaaae8a5541d7"
+        }
+      ]
+    },
+    "current_refine": {
+      "integrated_files": [
+        "refine.py",
+        "refine_margins.py",
+        "posture_quality.py",
+        "refine_target.py",
+        "refine_contract.py",
+        "bound_sdf.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p533_h3_hybrikx_hybrid_stage2_20260903/stage2/code/hybrid_retarget_keypose_v1.py",
+          "sha256": "b860798adec572847e7419cc38ec4e7451029cec93cca8850f71dd770c0404c1"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/run_neutral_sit_refine_v3.py",
+          "sha256": "8f1412d787c63a1167f78dc4592b1602bfe48e8625c5fce058eb748ddc9adbfd"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/gate_aligned_refine.py",
+          "sha256": "ffa76e956f0ec9e5205b39a0dbc59ca14570249200d3e1394f3dc8d2f4651969"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/physical_margin_terms.py",
+          "sha256": "feb6529ff9e4eaa185944638733f960abcc70695167856bd611182a10234a5ee"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/neutral_sit_quality.py",
+          "sha256": "d32b29a1d97428879445b6e4c394bb3b8ec40d1b292c384f3f099eb988c8c186"
+        },
+        {
+          "historical_source": "agent9/methods/p523_current_only_multiscene_20260902/stage2/code/current_retarget_keypose_cpu_v1.py",
+          "sha256": "e625a6220ab58902ed150c1c5783dd6ee4be481bba4683d51ec17769c641bffa"
+        },
+        {
+          "historical_source": "agent9/methods/p523_current_only_multiscene_20260902/stage2/code/current_only_contract_v1.py",
+          "sha256": "e4300eaf0e1b4a825df51c3e2fe31b3d19f24e6703151113a56f9ccc0e38e12b"
+        },
+        {
+          "historical_source": "agent9/methods/p523_current_only_multiscene_20260902/stage2/code/current_bound_sdf_v1.py",
+          "sha256": "14d2b9c4dabb610b7d3ecb4205a3be4bc172003849695046135b7d6129301d12"
+        }
+      ]
+    },
+    "support_geometry": {
+      "integrated_files": [
+        "body_geometry.py",
+        "contact_seed.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p498_semantic_surface_keypose_fix_20260830/code/retarget_keypose_cpu_v1.py",
+          "sha256": "71c731eaa736e4456ed87fddc37cc0e46339dda599b5466a8af61732e1b3d1c1"
+        },
+        {
+          "historical_source": "agent9/methods/p509_lingo_stage2_keypose_refine_20260901/code/stage2_contact_seed_v1.py",
+          "sha256": "3b441e3fb23d133d7491ca2de9feb05cc0dedf8288e0c1b64e76f725dd848227"
+        }
+      ]
+    },
+    "actual_review": {
+      "integrated_files": [
+        "background.py",
+        "background_numeric.py",
+        "image_review.py",
+        "mesh_review.py",
+        "posture_review.py",
+        "direction.py",
+        "compact_review.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/audit_generated_background.py",
+          "sha256": "ef734b7541b626518a0940ec26328a1715aacae6c46975454f230d73898e1e90"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/measure_background_consistency.py",
+          "sha256": "099e3d8620433725f66b9adff68ac607df391237af39e89fe2cb64a386c2dd99"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/audit_keypose_image_compact.py",
+          "sha256": "f06247a6d98bee936dee53f5c53e7ae7b2aee58e63633576fb04ef6ca0c13814"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/audit_refined_keypose_v5.py",
+          "sha256": "70955513ff9d963f9de611a67bb775d9cbd1fbaa2599e4a4b0da4e3d29864844"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/audit_neutral_sit_quality.py",
+          "sha256": "d412f69817e3ffacdf40b1173167d6b6f9b7c03da0c3e33e3a4bf1227aa3cb38"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/direction_preflight_v2.py",
+          "sha256": "4c93f73523d193a3ad5ca8b623fb11ec439f3f0f11f772c381292befb45bb62b"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/compact_audit_contract.py",
+          "sha256": "009d49bc780caea4a651c61649af5cfaf2f89938319260a4b148c3996a7f0959"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/diagnose_partial_visibility_prior.py",
+          "sha256": "a08614f6bc7cf39e6ce04d07801658e8db869c8cbbb373045efdc55311058237"
+        },
+        {
+          "historical_source": "agent9/methods/p553_h3_single_image_20260906/code/run_verified_image_keypose.py",
+          "sha256": "295957e96b979541de35413146b24584a7097d2b803c25d13e30933eac9b8bf3"
+        }
+      ]
+    },
+    "exact_mesh_render": {
+      "integrated_files": [
+        "render_scene.py",
+        "render_body.py",
+        "render_evidence.py"
+      ],
+      "sources": [
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/render_refine_diagnostic.py",
+          "sha256": "86cda59962e72eef6513af809cc9730767845c0cdf78e0b150b3b6877c174c00"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/render_refine_diagnostic_v2.py",
+          "sha256": "831190e52b4a4a791ea94a62c603982a7209421774af053abf2af6d6d17f1cee"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/render_body_diagnostic.py",
+          "sha256": "8bec7409eb62be1c858a643a39314a430431d12f480b5f01972713759caff2ff"
+        },
+        {
+          "historical_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/render_post_refine_evidence.py",
+          "sha256": "83aa508db8234033da530220c0ad33f5e8d37dfa3f77be2bffbfe4fc9a65c834"
+        }
+      ]
+    }
+  },
+  "older_project_numerical_leaves": {
+    "body_model.py": {
+      "historical_source": "agent6/runs/p478_skeleton_edit_e226_hsi_memory_20260814/code/fit_neutral_skeleton_edit.py",
+      "sha256": "b9a8b9c2611a28267c4144b6b929f3189bbe33229b1224e77973c5e9c2f484b0"
+    },
+    "refine_physics.py": {
+      "historical_source": "agent6/runs/p478_skeleton_edit_e226_hsi_memory_20260814/code/refine_static_keypose_target_aware.py",
+      "sha256": "352365e8b495f7a49fcb0249aa22752af9c3e84c6a24c5026d6f530d78df8976"
+    },
+    "contact_materialize.py": {
+      "historical_source": "agent6/runs/p480_memory_keypose_hsi_6h_20260814/code/optimize_target_conditioned_sparse_romp_pose.py",
+      "sha256": "a8f46d6a2eeb909f0a5ad225da1bc9ad24d53406e79ef67c2716f60744cc19af"
+    }
+  },
+  "new_integration_files": [
+    "__init__.py",
+    "_common.py",
+    "h3.py",
+    "placement.py",
+    "pipeline.py",
+    "physical_validation.py",
+    "review_provenance.py",
+    "sdf.py",
+    "worker.py"
+  ],
+  "new_integration_scope": "Ordinary direct calls and explicit runtime paths; placement materializes the original fixed-gluteal/yaw/root math without transient provider aliases; SDF reuses only distance transforms.",
+  "h3_runner_origin": "Project-owned direct caller of externally installed, unmodified ComfyUI APIs; not a copy of the held historical runner.",
+  "wire_format_policy": "Historical numerical NPZ and input schemas remain ABI labels. Final authority is hsi.stage2.verified_keypose.v1, never historical source pins.",
+  "validation_limits": "CPU numeric and adversarial tests are not pretrained-model/GPU/end-to-end validation."
+}

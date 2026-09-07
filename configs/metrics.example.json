@@ -1,0 +1,4 @@
+{
+  "metrics_unified": "/path/to/ReMoGen/metrics/metrics_unified.py",
+  "lingo_evaluation_driver": "/path/to/ReMoGen/metrics/calculate_metrics_unified_lingo.py"
+}

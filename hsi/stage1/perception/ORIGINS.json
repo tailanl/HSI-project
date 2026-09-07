@@ -1,0 +1,634 @@
+{
+  "schema": "hsi.stage1.perception.static_origins.v1",
+  "runtime_imports_of_origin_paths": false,
+  "unchanged_definition_count": 69,
+  "new_orchestration_modules": [
+    "__init__.py",
+    "runtime.py",
+    "worker.py"
+  ],
+  "adaptations": [
+    "Static relative imports replace historical module loaders.",
+    "SAM root and weight are explicit external runtime inputs.",
+    "Atomic numerical gates unchanged; removed global result side-channel and monkeypatch; explicit audit/support publication.",
+    "Fresh scene path never reads task or planner feedback.",
+    "Final SAM receipt is published once after consensus archive conversion."
+  ],
+  "third_party_model_implementation_copied": false,
+  "modules": [
+    {
+      "module": "renderer.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "sha256": "90b546b8ee37622edd0a909b03de951c89869bb9f49850cbcc9e32ba43a75d77"
+        }
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "FullSceneRenderError",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 62,
+          "original_end_line": 63,
+          "source_definition_sha256": "4684563c98e618dcd29695e65a48ca95c964f88644d42985d6fcac9966fd1a23"
+        },
+        {
+          "name": "Camera",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 67,
+          "original_end_line": 77,
+          "source_definition_sha256": "902d7ed7456ca863b7628217033a0183cbb072c6ef6f747c8fc5e3c3e4561662"
+        },
+        {
+          "name": "require",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 80,
+          "original_end_line": 82,
+          "source_definition_sha256": "d60b27b3b422e60daa01f39bb8dd114e0f35f0e73d50bc27995bf270fd0194e2"
+        },
+        {
+          "name": "sha256_file",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 85,
+          "original_end_line": 90,
+          "source_definition_sha256": "3f2fb996b5c5f14a40fa7d563c517c41a1bba3f17152297df7d5c59a426d94a0"
+        },
+        {
+          "name": "artifact",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 93,
+          "original_end_line": 99,
+          "source_definition_sha256": "104584794ecae8e25ff4dc31696a4aca238a5cb4a37b1696990414906a212b7d"
+        },
+        {
+          "name": "canonical_hash",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 102,
+          "original_end_line": 110,
+          "source_definition_sha256": "1c9109055cb39943f49159a79d9258cd1868013103d30fe0834d6781cd9d8221"
+        },
+        {
+          "name": "atomic_json",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 113,
+          "original_end_line": 127,
+          "source_definition_sha256": "f8d6c6c3248e1c8a755aff4949c2301a3857e26d4626645225d2b1e1682c3bf6"
+        },
+        {
+          "name": "native_to_world_occupancy",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 130,
+          "original_end_line": 137,
+          "source_definition_sha256": "9c09a8731b2068dfb7c0b53a5381791abd7faf3859e9029e9c700b411275f392"
+        },
+        {
+          "name": "cell_to_world_xy",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 140,
+          "original_end_line": 146,
+          "source_definition_sha256": "2f750704f44f731bc0c9fc9c670e7506cbe55dc95e54abb9e74933117969aa89"
+        },
+        {
+          "name": "human_clear_space",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 149,
+          "original_end_line": 200,
+          "source_definition_sha256": "df887d7af8374d33fbcb4bdeaa8501d51fe4cc026c2f80f5b89cee2222171719"
+        },
+        {
+          "name": "_representative_component_cell",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 203,
+          "original_end_line": 212,
+          "source_definition_sha256": "cc65e052265225f27fe8b8f8f131e587e410bef26a253cdf692481469aa33f1d"
+        },
+        {
+          "name": "select_anchor_cells",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 215,
+          "original_end_line": 286,
+          "source_definition_sha256": "8037866eba395a753f30b1ea250158819ac2d1ddcb1d4199d559974732d78ccd"
+        },
+        {
+          "name": "anchor_coverage_statistics",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 289,
+          "original_end_line": 325,
+          "source_definition_sha256": "5f768b61d28a3afb04ea15f856651f3a9948188f87bf97d777af146914b18fa5"
+        },
+        {
+          "name": "_unit",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 328,
+          "original_end_line": 332,
+          "source_definition_sha256": "abc2b2ba7e6fc726d0cfd731652c5c71d98fcadfd0cd82c42f7565c81ae877b9"
+        },
+        {
+          "name": "make_camera",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 335,
+          "original_end_line": 397,
+          "source_definition_sha256": "ef0b91b89dd2c518c32a1c929eedb03f4f340107bbe0de836364505b26bc208f"
+        },
+        {
+          "name": "build_cameras",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 400,
+          "original_end_line": 433,
+          "source_definition_sha256": "7f25a414669dd82edd3576724b37bdef1b816febaa3a5aaf75714a097f04376a"
+        },
+        {
+          "name": "load_scene_mesh",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 436,
+          "original_end_line": 460,
+          "source_definition_sha256": "7f00c99185b35c7561fd7bcfdd9146cd8995a7e0eb308f1abbe52166da5d5153"
+        },
+        {
+          "name": "opencv_to_pyrender_pose",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 463,
+          "original_end_line": 466,
+          "source_definition_sha256": "ad55b9a9406a9e16746ff7e71bef51e2658fedef4b9d28f0179646906895edf6"
+        },
+        {
+          "name": "image_statistics",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 469,
+          "original_end_line": 492,
+          "source_definition_sha256": "bb1f03ed17c56ad50f68505dfe36a3617a16dc1ee03ed8bf8db198ad05f0bcd3"
+        },
+        {
+          "name": "backproject_surface_voxels",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 495,
+          "original_end_line": 525,
+          "source_definition_sha256": "bcbd65d45f7a6f46d3414d675e7e80dcfec49609e7dfb76862e849a122ad17e7"
+        },
+        {
+          "name": "sampled_vertex_visibility",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 528,
+          "original_end_line": 573,
+          "source_definition_sha256": "f526e456e6eed241278aa26cc89991f3341fdf6629331b39b45e4b54fb800ae4"
+        },
+        {
+          "name": "render_views",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 576,
+          "original_end_line": 815,
+          "source_definition_sha256": "452a2e2e4bd33be6c5a69d29ec55adbe5470fae95790c9fae61fa553a384fcd7"
+        },
+        {
+          "name": "draw_contact_sheet",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 818,
+          "original_end_line": 865,
+          "source_definition_sha256": "25f5bdf9c37c4d975c4cebaaab3affeb93ba66ae6b9d27724de79c0c53edf515"
+        },
+        {
+          "name": "draw_anchor_map",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 868,
+          "original_end_line": 927,
+          "source_definition_sha256": "925a149861ce6245d42b261dbe694980ee0274058940da1a9eeda85b1dd3d7cf"
+        },
+        {
+          "name": "run",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 930,
+          "original_end_line": 1132,
+          "source_definition_sha256": "06c139776b7329f3eb21e3bf8c5cbc76c07fedd2a2dcc5590a36162981edf7f7"
+        },
+        {
+          "name": "main",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/render_lingo_fullscene_multiview_v1.py",
+          "original_line": 1242,
+          "original_end_line": 1266,
+          "source_definition_sha256": "31c651172b89cde3e1c0b9de3dd5a1e68631a0e36a9cf34633633947406f9e30"
+        }
+      ],
+      "adapted_definitions": [
+        "parse_args"
+      ],
+      "new_or_renamed_definitions": []
+    },
+    {
+      "module": "depth_geometry.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "sha256": "5c2a13513b22bd6df48c8b2390e424bca694f38bf30d6f27e97a0d0bddfbe1e5"
+        }
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "ProposalError",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 34,
+          "original_end_line": 35,
+          "source_definition_sha256": "ef0a58520230e845d3585cea01cee84fecf7787fe7dd29731e7c7efc3d0a4df3"
+        },
+        {
+          "name": "require",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 38,
+          "original_end_line": 40,
+          "source_definition_sha256": "0231960b2f7d95ef77264ee9f78aac8502c49916c869cc8bf0170c8cd0366173"
+        },
+        {
+          "name": "sha256_file",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 43,
+          "original_end_line": 48,
+          "source_definition_sha256": "3f2fb996b5c5f14a40fa7d563c517c41a1bba3f17152297df7d5c59a426d94a0"
+        },
+        {
+          "name": "artifact",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 51,
+          "original_end_line": 53,
+          "source_definition_sha256": "12143279f80a7623ab6ed18672bd4a931126e01af769b91f66d1a8674ae000ff"
+        },
+        {
+          "name": "checked_artifact",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 56,
+          "original_end_line": 61,
+          "source_definition_sha256": "53e78489a38f12015f48a52e2ad9cad51a71156b42651d264de06f503320a6eb"
+        },
+        {
+          "name": "atomic_json",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 64,
+          "original_end_line": 68,
+          "source_definition_sha256": "690a379579dcc6cbfdad13e378c95ed371ad454126e5018bdc00baf17f24c8c7"
+        },
+        {
+          "name": "world_points",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 71,
+          "original_end_line": 79,
+          "source_definition_sha256": "c4c07a94027ba5cd960dc3e447acb545a5fb45bc73fdc170eb6eb5f4ac49dd13"
+        },
+        {
+          "name": "iou",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 82,
+          "original_end_line": 90,
+          "source_definition_sha256": "cd7f6e4d33cd8ebaf4cc0e3e0eaebb1c69be92ff12bfa4af231aac656f0cc623"
+        },
+        {
+          "name": "propose",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 93,
+          "original_end_line": 167,
+          "source_definition_sha256": "771bf45a91e8c6843af01d325d24bed4aa25921f45e618b0745549128fed4281"
+        },
+        {
+          "name": "draw_boxes",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 170,
+          "original_end_line": 181,
+          "source_definition_sha256": "2d8c96ed62538b78bda759a58dcf5b2cf3860e5881dbdcdd5a601552e9bfc33f"
+        },
+        {
+          "name": "contact_sheet",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/propose_fullscene_anonymous_boxes_v1.py",
+          "original_line": 184,
+          "original_end_line": 195,
+          "source_definition_sha256": "30b40821490a8a90e63d91f06cde1a5eff56ad1e9e8ab04e1ce02359b6b19b49"
+        }
+      ],
+      "adapted_definitions": [],
+      "new_or_renamed_definitions": []
+    },
+    {
+      "module": "multiscale.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "sha256": "147b4f400a74ae3401d5a8b001ffea457b3781780d3df45c1737623cbccc6eb9"
+        }
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "MultiscaleFeedbackError",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 122,
+          "original_end_line": 123,
+          "source_definition_sha256": "4953771653d519c96c3980462ab55ec4118b8097f2cae18b246c4ea5e7625b62"
+        },
+        {
+          "name": "require",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 126,
+          "original_end_line": 128,
+          "source_definition_sha256": "f4b146eead1f88ba44503dbb11d3c0e8a7edb1d011206d96fb811ec18461fd2e"
+        },
+        {
+          "name": "parameter_changes",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 230,
+          "original_end_line": 238,
+          "source_definition_sha256": "7ba6b7b9184c93d9c55bcbb22b8a395cbe5add88854ce69fa5d6af8804ba4052"
+        },
+        {
+          "name": "_box_area",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 241,
+          "original_end_line": 243,
+          "source_definition_sha256": "a633d21ae54d96ec3bc1ca7ab31cfc97fe9747dd9d6b212583aa986b1e54cd17"
+        },
+        {
+          "name": "_containment",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 246,
+          "original_end_line": 251,
+          "source_definition_sha256": "c67328a0bdf0937b98ace518d78763e1eac7bd9aede82324bdc4aa67c4242a96"
+        },
+        {
+          "name": "_proposal_rank",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 254,
+          "original_end_line": 261,
+          "source_definition_sha256": "9052966147f3c970044e1dcdecfddabb078b843332d428c22f9f820d91b7fb77"
+        },
+        {
+          "name": "_validated_scale_rows",
+          "source": "agent9/methods/p539_qwen_feedback_closed_loop_20260904/code/run_multiscale_anonymous_depth_feedback_v1.py",
+          "original_line": 345,
+          "original_end_line": 368,
+          "source_definition_sha256": "2e4c30107ff31d0decec5b8cc1a595d7f7582eb58b1c2dbd519c1d10a5029deb"
+        }
+      ],
+      "adapted_definitions": [
+        "load_render",
+        "deduplicate_multiscale",
+        "propose_view_multiscale"
+      ],
+      "new_or_renamed_definitions": []
+    },
+    {
+      "module": "boxes.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p548_qwen38_full_pipeline_20260905/code/build_anonymous_boxes.py",
+          "sha256": "c3774a446ea54abd4972d53dc293e9fba11342d96d3e271e02c48243283981e0"
+        }
+      ],
+      "unchanged_top_level_definitions": [],
+      "adapted_definitions": [
+        "run"
+      ],
+      "new_or_renamed_definitions": []
+    },
+    {
+      "module": "sam_geometry.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "sha256": "b5fdbca7d3db4f436a2a9dcc649f6dfb26646acb34840a01eeeaba68b58bade5"
+        }
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "SceneInstanceError",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 47,
+          "original_end_line": 48,
+          "source_definition_sha256": "4f1e0b0f8a3026f6457ee2f0decfcb23d4a35ef46932e80db588f1097336fc55"
+        },
+        {
+          "name": "require",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 51,
+          "original_end_line": 53,
+          "source_definition_sha256": "c32c32e1688f59dd29c1dd2ad759b20076b60dc3ae75ae36d8f77ae87f69cbe0"
+        },
+        {
+          "name": "sha256_file",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 56,
+          "original_end_line": 61,
+          "source_definition_sha256": "3f2fb996b5c5f14a40fa7d563c517c41a1bba3f17152297df7d5c59a426d94a0"
+        },
+        {
+          "name": "artifact",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 64,
+          "original_end_line": 70,
+          "source_definition_sha256": "104584794ecae8e25ff4dc31696a4aca238a5cb4a37b1696990414906a212b7d"
+        },
+        {
+          "name": "checked_artifact",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 73,
+          "original_end_line": 78,
+          "source_definition_sha256": "b87992bf212f361f7bb060b3f96a603101430e469051b095855796d3c2df7a1f"
+        },
+        {
+          "name": "atomic_json",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 81,
+          "original_end_line": 88,
+          "source_definition_sha256": "f907cd5ff1ceeff77bc4aa06269f5af9a680a7aad98702bb927a430aa901faba"
+        },
+        {
+          "name": "canonical_hash",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 91,
+          "original_end_line": 93,
+          "source_definition_sha256": "e0ccf569a3864b0899807b32ffb18d83ffef6a8bcacbed37f3544ef808c40466"
+        },
+        {
+          "name": "load_original_obj_vertices",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 117,
+          "original_end_line": 127,
+          "source_definition_sha256": "99148e8671164d1e4a3b9a5796ef08cf4adaa278df2904bddbe0c7fabda561aa"
+        },
+        {
+          "name": "cleanup_mask",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 130,
+          "original_end_line": 167,
+          "source_definition_sha256": "ba52d17ac801c9ec2b88ea97617bf05a8fd89d8095446a1041d8bf87b165cb6f"
+        },
+        {
+          "name": "mask_nms",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 170,
+          "original_end_line": 195,
+          "source_definition_sha256": "bb01ec01329a903d3e09fe60442e95f8960907513ae06f498ca75c841be1ab50"
+        },
+        {
+          "name": "run_view_sam",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 227,
+          "original_end_line": 256,
+          "source_definition_sha256": "64e8ab4ea3120bd08e62fca755fd49326442769db43897ea723716273be075b3"
+        },
+        {
+          "name": "visible_vertex_projection",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 259,
+          "original_end_line": 273,
+          "source_definition_sha256": "556ed0e6b174c82fab40a7c8953e17cabb633997f0792e57ccfd63d41945e640"
+        },
+        {
+          "name": "Observation",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 277,
+          "original_end_line": 288,
+          "source_definition_sha256": "f296bd5ea2a510836a71dacd2d46198457bee176182f88f4214ffeedeeddce5e"
+        },
+        {
+          "name": "deterministic_sample",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 307,
+          "original_end_line": 310,
+          "source_definition_sha256": "9ac43554763072064f77929f18a3ff11eb79e3b9438202b62eeb54eed40e0413"
+        },
+        {
+          "name": "pair_audit",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 313,
+          "original_end_line": 343,
+          "source_definition_sha256": "2561b2863380dd4516ee810a533928c34e268885618cd5d0eb8063584816c014"
+        },
+        {
+          "name": "panel_for_observation",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 375,
+          "original_end_line": 405,
+          "source_definition_sha256": "afa8ff8c32d7704e9a1ab818804b89a6faff6a3e3a8825345c4407467850d431"
+        },
+        {
+          "name": "contact_sheet",
+          "source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "original_line": 408,
+          "original_end_line": 419,
+          "source_definition_sha256": "cf5d1951eb778c23701596d5c2872c06a77600283cb3c7f4a31cea298728e88f"
+        }
+      ],
+      "adapted_definitions": [
+        "read_inputs",
+        "load_sam31"
+      ],
+      "new_or_renamed_definitions": []
+    },
+    {
+      "module": "sam.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/run_lingo_fullscene_sam31_instances_v1.py",
+          "sha256": "b5fdbca7d3db4f436a2a9dcc649f6dfb26646acb34840a01eeeaba68b58bade5"
+        }
+      ],
+      "unchanged_top_level_definitions": [],
+      "adapted_definitions": [
+        "run"
+      ],
+      "new_or_renamed_definitions": [
+        "AtomicFusionRejected"
+      ]
+    },
+    {
+      "module": "atomic.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "sha256": "a9a3755d5060a5df992bfc3fc915e437033a6c664100447ebeefb0fa4d0b5115"
+        }
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "AtomicFusionThresholds",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 76,
+          "original_end_line": 101,
+          "source_definition_sha256": "fc3f6a99399500662fca611f8197d99c8f7e79650b88261f9715dcc88207d3ce"
+        },
+        {
+          "name": "_support_sha256",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 187,
+          "original_end_line": 191,
+          "source_definition_sha256": "f14b44f36b36c4ed5cf66dcdb9340e873f461351069419ce5ba21c5e8c5b49c4"
+        },
+        {
+          "name": "_component_supports",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 194,
+          "original_end_line": 224,
+          "source_definition_sha256": "53891807fd33844b1da836617d89fed5a793e929b8bc62bd1f4d479d05726062"
+        },
+        {
+          "name": "_same_view_3d_deduplicate",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 227,
+          "original_end_line": 278,
+          "source_definition_sha256": "4041d6ca0a4363fa9ef713e023f3e2fc0c92cddaa20075d83bc8e9365b3bf984"
+        },
+        {
+          "name": "_compatibility_score",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 281,
+          "original_end_line": 308,
+          "source_definition_sha256": "aca7d759cb5b2d5c1f677e6aadb5d364c557e7b59636c7d0a609f5ca3e3c788b"
+        },
+        {
+          "name": "_component_audit",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 377,
+          "original_end_line": 488,
+          "source_definition_sha256": "65dbeb9b731bd72738a027875ab17f4102e69d69ab597b7fca33ee0f788d11e0"
+        },
+        {
+          "name": "_component_publication_rank",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 491,
+          "original_end_line": 502,
+          "source_definition_sha256": "e1a6ff17cc2bb4246e32809f0f85df39cd455f59bc643cebc9a93627c2cabe10"
+        },
+        {
+          "name": "_support_overlap",
+          "source": "agent9/methods/p515_lingo_metric_scene_graph_20260901/code/run_lingo_fullscene_sam31_atomic_instances_v1.py",
+          "original_line": 505,
+          "original_end_line": 513,
+          "source_definition_sha256": "1873b420587d9f4da319fa591e9a582b01bd99f1f1bbcabeefdfca09c15e12e4"
+        }
+      ],
+      "adapted_definitions": [
+        "_require_observation_support",
+        "atomic_pair_audit",
+        "strict_fuse_observations_with_audit",
+        "_rewrite_support_archive_with_consensus"
+      ],
+      "new_or_renamed_definitions": [
+        "decorate_receipt"
+      ]
+    },
+    {
+      "module": "runtime.py",
+      "origin_files": [
+        {
+          "path": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/batch_contract.py",
+          "sha256": "a5a318a8426e918af04c8e1110df658018f7e1b2c937568d217de91a1d6dc57b"
+        }
+      ],
+      "unchanged_top_level_definitions": [],
+      "adapted_definitions": [],
+      "new_or_renamed_definitions": [
+        "PerceptionRuntime",
+        "source_closure",
+        "verify_sources",
+        "_environment",
+        "_worker",
+        "run"
+      ]
+    }
+  ],
+  "fingerprint_contract": "UTF-8 source lines from first decorator (or definition) through final body line, joined with LF and one trailing LF; independent of Python ast.dump version."
+}

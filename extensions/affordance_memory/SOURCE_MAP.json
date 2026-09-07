@@ -1,0 +1,396 @@
+{
+  "schema": "hsi.current_research_extension_source_map.v1",
+  "purpose": "current_affordance_memory_dependency_graph_not_alternative_method_history",
+  "primary_entries": [
+    "run_geometry_stage2_memory_v2.py",
+    "memory_runtime_v2.py",
+    "episode_evidence_v2.py",
+    "memory_store_v2.py"
+  ],
+  "integration_status": "source_present_not_integrated_with_native_hsi_execution_receipts",
+  "independent_clean_checkout_runtime_available": false,
+  "source_pins_resigned": false,
+  "files": [
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/audit_current_motion_semantics_v1.py",
+      "original_bytes": 12420,
+      "original_sha256": "ab719f647a3fef788dbaf84ff794589c9232ebd540848f0de70ac80e35109411",
+      "destination": "audit_current_motion_semantics_v1.py",
+      "packaged_bytes": 12420,
+      "packaged_sha256": "ab719f647a3fef788dbaf84ff794589c9232ebd540848f0de70ac80e35109411",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/audit_geometry_keypose.py",
+      "original_bytes": 8828,
+      "original_sha256": "493e0a55281b3182f6a0bbfa79cce1e59a52c6a22f1a885215d50e231ab3bbe7",
+      "destination": "audit_geometry_keypose.py",
+      "packaged_bytes": 8828,
+      "packaged_sha256": "493e0a55281b3182f6a0bbfa79cce1e59a52c6a22f1a885215d50e231ab3bbe7",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/audit_geometry_keypose_memory_v2.py",
+      "original_bytes": 8422,
+      "original_sha256": "d603771f22404147b482aa6be9240baafdbfb8f363420d31d3784843620e5d36",
+      "destination": "audit_geometry_keypose_memory_v2.py",
+      "packaged_bytes": 8422,
+      "packaged_sha256": "d603771f22404147b482aa6be9240baafdbfb8f363420d31d3784843620e5d36",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/compile_geometry_stage3.py",
+      "original_bytes": 46473,
+      "original_sha256": "b9d18293f428f45ef6c7666b7de90c66c4b7f9109cb8be2c439e6458983bb7a7",
+      "destination": "compile_geometry_stage3.py",
+      "packaged_bytes": 46473,
+      "packaged_sha256": "b9d18293f428f45ef6c7666b7de90c66c4b7f9109cb8be2c439e6458983bb7a7",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/compile_geometry_stage3_v2.py",
+      "original_bytes": 10472,
+      "original_sha256": "4313f72760bd6ee3d2bcb2b934f194750f5605b5e5eeb1c1729dd1be4c60dfb4",
+      "destination": "compile_geometry_stage3_v2.py",
+      "packaged_bytes": 10472,
+      "packaged_sha256": "4313f72760bd6ee3d2bcb2b934f194750f5605b5e5eeb1c1729dd1be4c60dfb4",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/current_motion_evidence.py",
+      "original_bytes": 37346,
+      "original_sha256": "eeff8333eaa93f0560cebaa5737655f3521f4e5307f5409b8c090ee4a88b6c14",
+      "destination": "current_motion_evidence.py",
+      "packaged_bytes": 37346,
+      "packaged_sha256": "eeff8333eaa93f0560cebaa5737655f3521f4e5307f5409b8c090ee4a88b6c14",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/episode_evidence.py",
+      "original_bytes": 28951,
+      "original_sha256": "d0ec53b4dc33894614160509a474b0901e7ac8cc1b8c2d6f68b823b999277dc4",
+      "destination": "episode_evidence.py",
+      "packaged_bytes": 28951,
+      "packaged_sha256": "d0ec53b4dc33894614160509a474b0901e7ac8cc1b8c2d6f68b823b999277dc4",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/episode_evidence_v2.py",
+      "original_bytes": 23207,
+      "original_sha256": "8faf51852575c965393204703ca0321f357f12de2d6cf84dbd12682f1b9c1393",
+      "destination": "episode_evidence_v2.py",
+      "packaged_bytes": 23207,
+      "packaged_sha256": "8faf51852575c965393204703ca0321f357f12de2d6cf84dbd12682f1b9c1393",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/evaluate_geometry_stage3.py",
+      "original_bytes": 14021,
+      "original_sha256": "b3e49c5c0ae3751982b37f3d5b177fdbd104227de3eee9436ace69e9b37393c3",
+      "destination": "evaluate_geometry_stage3.py",
+      "packaged_bytes": 14021,
+      "packaged_sha256": "b3e49c5c0ae3751982b37f3d5b177fdbd104227de3eee9436ace69e9b37393c3",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/evaluate_geometry_stage3_v2.py",
+      "original_bytes": 3698,
+      "original_sha256": "f399fb0782cc4e706d9b0741eb49151f37fee1e6e7ae8f2aa4cb80df14997d3b",
+      "destination": "evaluate_geometry_stage3_v2.py",
+      "packaged_bytes": 3698,
+      "packaged_sha256": "f399fb0782cc4e706d9b0741eb49151f37fee1e6e7ae8f2aa4cb80df14997d3b",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/extract_local_experience_v2.py",
+      "original_bytes": 5763,
+      "original_sha256": "410abd90bf6c2b20da52b7ef3bf76ee50f16e082c84075a441962ad237afa1eb",
+      "destination": "extract_local_experience_v2.py",
+      "packaged_bytes": 5763,
+      "packaged_sha256": "410abd90bf6c2b20da52b7ef3bf76ee50f16e082c84075a441962ad237afa1eb",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/fast_keypose.py",
+      "original_bytes": 21666,
+      "original_sha256": "1809c04b02ebcbc4c93213e859d2d82455101e1bba0d41007ce8886126165883",
+      "destination": "fast_keypose.py",
+      "packaged_bytes": 21666,
+      "packaged_sha256": "1809c04b02ebcbc4c93213e859d2d82455101e1bba0d41007ce8886126165883",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/fast_keypose_memory_v2.py",
+      "original_bytes": 10293,
+      "original_sha256": "c06d8c62e84f40e70db32b8f3b77e23b7d013ef3ee25fbaeb556d56712d216ba",
+      "destination": "fast_keypose_memory_v2.py",
+      "packaged_bytes": 10293,
+      "packaged_sha256": "c06d8c62e84f40e70db32b8f3b77e23b7d013ef3ee25fbaeb556d56712d216ba",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/geometry_memory_contract_v2.py",
+      "original_bytes": 14985,
+      "original_sha256": "f0d55fd0e421bb3cbfbae79d6517318db2f27600c9b3ec8c1044b5432f6aabe2",
+      "destination": "geometry_memory_contract_v2.py",
+      "packaged_bytes": 14985,
+      "packaged_sha256": "f0d55fd0e421bb3cbfbae79d6517318db2f27600c9b3ec8c1044b5432f6aabe2",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_common.py",
+      "original_bytes": 4882,
+      "original_sha256": "7e6ada04e65f32fdde2ea1f236f3d24f0f7600dc22bbc8ac900766afffe97a1b",
+      "destination": "memory_common.py",
+      "packaged_bytes": 5251,
+      "packaged_sha256": "f70f90b6618490e87e0489f3c5f05e2988a7b84f246f3287a16ac88f81a4ecdb",
+      "changes": [
+        "Replace implicit parent-derived PROJECT with required explicit HSI_RESEARCH_ROOT"
+      ]
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_retrieval.py",
+      "original_bytes": 16878,
+      "original_sha256": "8c0c6e504dd78e0e80eeec45229e24393129aa960c1b769ddbc71bf469a49928",
+      "destination": "memory_retrieval.py",
+      "packaged_bytes": 16878,
+      "packaged_sha256": "8c0c6e504dd78e0e80eeec45229e24393129aa960c1b769ddbc71bf469a49928",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_runtime.py",
+      "original_bytes": 21165,
+      "original_sha256": "e684717a2e369b498391193684dbbfe374d383318ebe188b364d121f76b01143",
+      "destination": "memory_runtime.py",
+      "packaged_bytes": 21165,
+      "packaged_sha256": "e684717a2e369b498391193684dbbfe374d383318ebe188b364d121f76b01143",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_runtime_v2.py",
+      "original_bytes": 10133,
+      "original_sha256": "ab66b9dea3d05544434b5cd7e37441936d39d1b096690713741422f2b9a9949c",
+      "destination": "memory_runtime_v2.py",
+      "packaged_bytes": 10133,
+      "packaged_sha256": "ab66b9dea3d05544434b5cd7e37441936d39d1b096690713741422f2b9a9949c",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_schema.py",
+      "original_bytes": 9645,
+      "original_sha256": "1944c4e32dea336c2abdc72b5c6ae7ed561fd2711c0d0cde41336adb21242edf",
+      "destination": "memory_schema.py",
+      "packaged_bytes": 9645,
+      "packaged_sha256": "1944c4e32dea336c2abdc72b5c6ae7ed561fd2711c0d0cde41336adb21242edf",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_store.py",
+      "original_bytes": 32927,
+      "original_sha256": "2a5c78e13593950201da951b23b55e91ea65d9821c66ac2c443ae59ea6d69974",
+      "destination": "memory_store.py",
+      "packaged_bytes": 32927,
+      "packaged_sha256": "2a5c78e13593950201da951b23b55e91ea65d9821c66ac2c443ae59ea6d69974",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/memory_store_v2.py",
+      "original_bytes": 2860,
+      "original_sha256": "8445c65e01912b65da2f6aeac116f0d8be58faa3661372e98df2bce7533b6d5e",
+      "destination": "memory_store_v2.py",
+      "packaged_bytes": 2860,
+      "packaged_sha256": "8445c65e01912b65da2f6aeac116f0d8be58faa3661372e98df2bce7533b6d5e",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/motion_semantic_contract_v1.py",
+      "original_bytes": 8253,
+      "original_sha256": "7b3f2c25a3b9abe444f16d56de51710e78000c0f0c644db9dc58256b3cdf96dc",
+      "destination": "motion_semantic_contract_v1.py",
+      "packaged_bytes": 8253,
+      "packaged_sha256": "7b3f2c25a3b9abe444f16d56de51710e78000c0f0c644db9dc58256b3cdf96dc",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/motion_semantic_render_helpers.py",
+      "original_bytes": 4609,
+      "original_sha256": "e2196f25ffa719405f39b3153e232b8acfdad51cde8a6dc6b008c8f022d401cb",
+      "destination": "motion_semantic_render_helpers.py",
+      "packaged_bytes": 4609,
+      "packaged_sha256": "e2196f25ffa719405f39b3153e232b8acfdad51cde8a6dc6b008c8f022d401cb",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/neutral_seed.py",
+      "original_bytes": 15822,
+      "original_sha256": "af4e5c8e47c7a9ca6d610aa1846e4c4c53017ea5614ea5a46f14c260dd379aa2",
+      "destination": "neutral_seed.py",
+      "packaged_bytes": 15822,
+      "packaged_sha256": "af4e5c8e47c7a9ca6d610aa1846e4c4c53017ea5614ea5a46f14c260dd379aa2",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/neutral_seed_v2.py",
+      "original_bytes": 3934,
+      "original_sha256": "4cb1ee00984600204eeaf707c524de534666e9aadf64b89eceead5cf6a18620e",
+      "destination": "neutral_seed_v2.py",
+      "packaged_bytes": 3934,
+      "packaged_sha256": "4cb1ee00984600204eeaf707c524de534666e9aadf64b89eceead5cf6a18620e",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/render_current_motion_semantics_v1.py",
+      "original_bytes": 12439,
+      "original_sha256": "3dc5ead58d1e2d93300b43d67ea5e0bb9be87ad73525630f7c0d252123a373ca",
+      "destination": "render_current_motion_semantics_v1.py",
+      "packaged_bytes": 12439,
+      "packaged_sha256": "3dc5ead58d1e2d93300b43d67ea5e0bb9be87ad73525630f7c0d252123a373ca",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/render_geometry_keypose_memory_v2.py",
+      "original_bytes": 2803,
+      "original_sha256": "5ed24439750bc09c300fc7898032bd2736d7b383d9d51843b7fcf96c411a6dc8",
+      "destination": "render_geometry_keypose_memory_v2.py",
+      "packaged_bytes": 2803,
+      "packaged_sha256": "5ed24439750bc09c300fc7898032bd2736d7b383d9d51843b7fcf96c411a6dc8",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/render_geometry_keypose_v2.py",
+      "original_bytes": 12061,
+      "original_sha256": "fd4ec8d14080857dacfb72ca641bf9ba12890efefa972876363eda919c42b9ac",
+      "destination": "render_geometry_keypose_v2.py",
+      "packaged_bytes": 12061,
+      "packaged_sha256": "fd4ec8d14080857dacfb72ca641bf9ba12890efefa972876363eda919c42b9ac",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/run_geometry_stage2_memory_v2.py",
+      "original_bytes": 9138,
+      "original_sha256": "04406a9a128953f9f08a564bcca30cc1c999dea943b7d666399a014af0747f4e",
+      "destination": "run_geometry_stage2_memory_v2.py",
+      "packaged_bytes": 9138,
+      "packaged_sha256": "04406a9a128953f9f08a564bcca30cc1c999dea943b7d666399a014af0747f4e",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/run_geometry_stage3.py",
+      "original_bytes": 19609,
+      "original_sha256": "e223f31ecf2265151bbb7bbbc2b6ad6a294d2852591bd6139903a442491a30d7",
+      "destination": "run_geometry_stage3.py",
+      "packaged_bytes": 19609,
+      "packaged_sha256": "e223f31ecf2265151bbb7bbbc2b6ad6a294d2852591bd6139903a442491a30d7",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/run_geometry_stage3_v2.py",
+      "original_bytes": 19763,
+      "original_sha256": "7391c95364449afa87c2164a0ee558a9841f4eb7fd817224d80d34341ca4e9fd",
+      "destination": "run_geometry_stage3_v2.py",
+      "packaged_bytes": 19763,
+      "packaged_sha256": "7391c95364449afa87c2164a0ee558a9841f4eb7fd817224d80d34341ca4e9fd",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/scene_facts.py",
+      "original_bytes": 24999,
+      "original_sha256": "5ab95a5a3732a4a6669ed9f2a5bce838b4c61855da064ce20e71d3c8ddb6c83d",
+      "destination": "scene_facts.py",
+      "packaged_bytes": 24999,
+      "packaged_sha256": "5ab95a5a3732a4a6669ed9f2a5bce838b4c61855da064ce20e71d3c8ddb6c83d",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/stage3_affordance_guidance.py",
+      "original_bytes": 32540,
+      "original_sha256": "737389b2253e2db9bac33d5fe04f1285ca33a34496f6176571aa09ab872f1ecb",
+      "destination": "stage3_affordance_guidance.py",
+      "packaged_bytes": 32540,
+      "packaged_sha256": "737389b2253e2db9bac33d5fe04f1285ca33a34496f6176571aa09ab872f1ecb",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/stage3_affordance_guidance_v2.py",
+      "original_bytes": 21469,
+      "original_sha256": "a8aaa132544a3cdeef5265299559921a42651aeb3a8a60d1b80ae2f009beb27b",
+      "destination": "stage3_affordance_guidance_v2.py",
+      "packaged_bytes": 21469,
+      "packaged_sha256": "a8aaa132544a3cdeef5265299559921a42651aeb3a8a60d1b80ae2f009beb27b",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/surface_geometry.py",
+      "original_bytes": 10846,
+      "original_sha256": "aa03106d17c671e122074178a5ad54a1669f13c63179f6a65a3e531f4d309c52",
+      "destination": "surface_geometry.py",
+      "packaged_bytes": 10846,
+      "packaged_sha256": "aa03106d17c671e122074178a5ad54a1669f13c63179f6a65a3e531f4d309c52",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/visualize_geometry_motion.py",
+      "original_bytes": 32253,
+      "original_sha256": "7f09899b933842ed705bec9c7e2fbbb6a37afb86020640a9613cc1854a95fa25",
+      "destination": "visualize_geometry_motion.py",
+      "packaged_bytes": 32253,
+      "packaged_sha256": "7f09899b933842ed705bec9c7e2fbbb6a37afb86020640a9613cc1854a95fa25",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/visualize_geometry_motion_v2.py",
+      "original_bytes": 20697,
+      "original_sha256": "8c90cbedafd939b4db12a711dea212abd116e95407b00d886b784865fce40cbb",
+      "destination": "visualize_geometry_motion_v2.py",
+      "packaged_bytes": 20697,
+      "packaged_sha256": "8c90cbedafd939b4db12a711dea212abd116e95407b00d886b784865fce40cbb",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/visualize_geometry_motion_v3.py",
+      "original_bytes": 8416,
+      "original_sha256": "52145a6fd6109cb8f74b80bf66b4c8a28077c865ded61b7cb96471e2d13880cd",
+      "destination": "visualize_geometry_motion_v3.py",
+      "packaged_bytes": 8416,
+      "packaged_sha256": "52145a6fd6109cb8f74b80bf66b4c8a28077c865ded61b7cb96471e2d13880cd",
+      "changes": []
+    },
+    {
+      "source_relative_path": "agent9/methods/p555_affordance_memory_20260906/code/visualize_stage3_guidance_comparison.py",
+      "original_bytes": 43149,
+      "original_sha256": "aa3417532d7bc104284e7c48660808574233584b475bfef13fe08ec4f2288d93",
+      "destination": "visualize_stage3_guidance_comparison.py",
+      "packaged_bytes": 43149,
+      "packaged_sha256": "aa3417532d7bc104284e7c48660808574233584b475bfef13fe08ec4f2288d93",
+      "changes": []
+    }
+  ],
+  "native_numerical_counterparts": {
+    "bind_route": "hsi/stage1/binding.py",
+    "region_pipeline": "hsi/stage1/navigation.py",
+    "retarget_keypose_cpu_v1": "hsi/stage2/body_geometry.py",
+    "current_only_contract_v1": "hsi/stage2/refine_contract.py",
+    "current_bound_sdf_v1": "hsi/stage2/bound_sdf.py",
+    "precompute_bound_sdf": "hsi/stage2/sdf.py",
+    "neutral_sit_quality": "hsi/stage2/posture_quality.py",
+    "physical_margin_terms": "hsi/stage2/refine_margins.py",
+    "gate_aligned_refine": "hsi/stage2/refine_physics.py",
+    "render_lingo_fullscene_multiview_v1": "hsi/stage1/perception/renderer.py",
+    "build_fresh_current_frame0_v1": "hsi/stage3/frame.py",
+    "query_static_seed": "hsi/stage3/static_seed.py",
+    "evaluate_current_stage3_motion_v1": "hsi/stage3/evaluation.py",
+    "run_p478_hsi": "hsi/stage3/executor.py"
+  },
+  "remaining_external_bindings": [
+    "Original research path layout and producer source pins in the explicitly configured HSI_RESEARCH_ROOT",
+    "Original reserved GPU/Qwen-lease sitecustomize wrapper (not a numerical method; not copied)",
+    "Licensed SMPL-X neutral assets and segmentation metadata; ReMoGen/CLIP checkpoints and runtime packages; Qwen service",
+    "Actual scene meshes/occupancy and Stage1/2/3 evidence receipts"
+  ],
+  "verification": {
+    "source_presence_and_copy_hashes_only": true,
+    "new_full_tests_run": false,
+    "real_models_run": false,
+    "username_literal_scan": "No /home/ or /root/ literal in selected Python sources"
+  }
+}

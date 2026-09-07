@@ -1,0 +1,95 @@
+{
+  "schema": "p478.hsi_e226_bridge.v1",
+  "coordinate_frame": "world_zup_xyz_m_navigation_xy",
+  "causal_contract": {
+    "allowed_history_sources": [
+      "query_static_initial_history",
+      "generated_prefix"
+    ],
+    "current_source": "differentiable_pred_xstart_decode",
+    "goal_source": "planner_active_node",
+    "icgf_source": "predicted_keypose_contact_only",
+    "forbidden": [
+      "future_frames",
+      "ground_truth_root",
+      "ground_truth_pose",
+      "ground_truth_contact",
+      "ground_truth_icgf",
+      "posthoc_motion_edit"
+    ]
+  },
+  "bridge": {
+    "enabled": true,
+    "rolling_scale": 1.0,
+    "history_tail_frames": 64,
+    "pelvis_joint_index": 0,
+    "include_pelvis_sdf": false,
+    "forbid_duplicate_goal_guidance": true,
+    "rolling": {
+      "goal_weight": 1.0,
+      "heading_weight": 0.25,
+      "smooth_weight": 4.0,
+      "length_ratio_weight": 2.0,
+      "backtrack_weight": 4.0,
+      "zigzag_weight": 1.0,
+      "self_loop_weight": 1.0,
+      "sdf_weight": 0.0,
+      "max_length_ratio": 1.35,
+      "minimum_direct_distance_m": 0.05,
+      "backtrack_tolerance_m": 0.0,
+      "zigzag_turn_threshold_deg": 55.0,
+      "minimum_step_m": 0.00001,
+      "heading_tail_segments": 3,
+      "self_loop_temporal_exclusion_frames": 4,
+      "self_loop_sigma_m": 0.15,
+      "sdf_clearance_m": 0.1
+    }
+  },
+  "ablations": {
+    "M1_KEYPOSE": {
+      "cond_fn": "none",
+      "keypose_packet": true,
+      "sdf": false,
+      "e226": false,
+      "predicted_icgf": false,
+      "feedback_hold": false
+    },
+    "M2_KEYPOSE_SDF": {
+      "cond_fn": "P360.ReMoGenRawSceneCondFn",
+      "keypose_packet": true,
+      "sdf": true,
+      "e226": false,
+      "predicted_icgf": false,
+      "feedback_hold": false
+    },
+    "M3_KEYPOSE_SDF_E226": {
+      "cond_fn": "P478.ReMoGenE226CondFn",
+      "keypose_packet": true,
+      "sdf": true,
+      "e226": true,
+      "predicted_icgf": false,
+      "feedback_hold": false,
+      "base_goal_world_zup": null
+    },
+    "M4_KEYPOSE_SDF_E226_ICGF": {
+      "cond_fn": "P478.ReMoGenE226CondFn",
+      "keypose_packet": true,
+      "sdf": true,
+      "e226": true,
+      "predicted_icgf": true,
+      "feedback_hold": false,
+      "base_goal_world_zup": null
+    },
+    "M5_M4_FEEDBACK_HOLD": {
+      "cond_fn": "P478.ReMoGenE226CondFn",
+      "keypose_packet": true,
+      "sdf": true,
+      "e226": true,
+      "predicted_icgf": true,
+      "feedback_hold": true,
+      "base_goal_world_zup": null,
+      "note": "feedback decides whether another generated primitive is needed; it never edits a completed frame"
+    }
+  }
+}
+

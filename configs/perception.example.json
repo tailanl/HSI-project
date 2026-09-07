@@ -1,0 +1,8 @@
+{
+  "render_python": "/path/to/render-env/bin/python",
+  "sam_python": "/path/to/sam-env/bin/python",
+  "sam_root": "/path/to/ComfyUI",
+  "sam_weight": "/path/to/sam3.pt",
+  "gpu": 0,
+  "stage_timeout_seconds": 7200
+}

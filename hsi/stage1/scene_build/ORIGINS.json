@@ -1,0 +1,431 @@
+{
+  "schema": "hsi.stage1.scene_build.static_origins.v1",
+  "unchanged_definition_count": 37,
+  "modules": [
+    {
+      "module": "semantic_contract.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "validate",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py",
+          "ast_sha256": "7cbd0e50e2b9c14cfb6f75cf7b8228f80068e0ddb61a6745621ea0778f21a947"
+        },
+        {
+          "name": "semantic_status",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py",
+          "ast_sha256": "8a032d1518cd0462769595fa66c309732a961c0311fcc0da394e9f00503daa8a"
+        },
+        {
+          "name": "agree",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py",
+          "ast_sha256": "37e6fd8a2c5663f747d439844672e462c7710aa02b91a8126a467988cb7f4a96"
+        },
+        {
+          "name": "size_diagnostic",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py",
+          "ast_sha256": "003cf66b801b08c9acdb153381122986448ff2aabd3dbdf379bfa9b32d1e58a2"
+        },
+        {
+          "name": "direction_hypotheses",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/semantic_contract.py",
+          "ast_sha256": "1e45623c37d70e99c1104224ac30faee818152ed7440bccdfdcfc53390c1539e"
+        }
+      ],
+      "adapted_definitions": []
+    },
+    {
+      "module": "geometry.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/build_scene_geometry.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "surface_identity",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/build_scene_geometry.py",
+          "ast_sha256": "aef7802524c172dfef5be350b446fd64d9872261012ea1504dbd3cf1aa3dc53d"
+        },
+        {
+          "name": "local_front",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/build_scene_geometry.py",
+          "ast_sha256": "6864e39cd5010843d152d402faa72ebf2ad61cd0276c674a1d4205bfbb74679a"
+        }
+      ],
+      "adapted_definitions": [
+        "geometry_kernel",
+        "run"
+      ]
+    },
+    {
+      "module": "shapes.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/enrich_scene_shapes.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "run",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/enrich_scene_shapes.py",
+          "ast_sha256": "053816a0e69e92b2183dd84c6b799ba070952222dd7673611e15967d8f276ecf"
+        }
+      ],
+      "adapted_definitions": []
+    },
+    {
+      "module": "recovery_candidates.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/recovery_candidates.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "compatible_parts",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/recovery_candidates.py",
+          "ast_sha256": "664ca3a36fea618388f974cefab7b767e8a9c27c4df976e059dc634f87186b2c"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "parts.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_parts.py"
+      ],
+      "unchanged_top_level_definitions": [],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "composition.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/compose_scene.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/compose_scene_v2.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_v2.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "composition_description",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/compose_scene_v2.py",
+          "ast_sha256": "5ffcbf1d44da56bc511805ffef618eb9fad3a81a94b0150484361241493f57e6"
+        },
+        {
+          "name": "composition_eligible",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_v2.py",
+          "ast_sha256": "03f5013df2ebcc304380d81a3907fa550ff0c8483440ead36b52ab0966250bd3"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "semantics.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/understand_scene.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "classify_instance",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/understand_scene.py",
+          "ast_sha256": "5de53577f43b1862059348d8dcc74db167a189c723a6a320d61f738cc24373a1"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "semantic_revision.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_semantics.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "review_decision",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_semantics.py",
+          "ast_sha256": "7833aece070e81cf2e6c5f75e8a675c01c1379989062745aa0eb6ccffc86a29f"
+        },
+        {
+          "name": "run",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_semantics.py",
+          "ast_sha256": "d4e3a40dcb368e4e230c9f1d2d7a56e1cba0b41c267a9787fb4091f0cc5405c8"
+        }
+      ],
+      "adapted_definitions": []
+    },
+    {
+      "module": "components.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/isolate_scene_component.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/dominant_support_envelope.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/isolate_scene_component_v3.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/scan_scene_components_v3.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "connected_labels",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/isolate_scene_component.py",
+          "ast_sha256": "5306ca915b30c92ff406fa030e1e6745fbf856758d3b69ccc49c911750bd3959"
+        },
+        {
+          "name": "stable_dominant",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/dominant_support_envelope.py",
+          "ast_sha256": "84c8f9904e14a95d1c4409d89eb57f67be6212c65c469f1cc31585cafa51cd9c"
+        },
+        {
+          "name": "run",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/isolate_scene_component.py",
+          "ast_sha256": "2858f82a7a23b617ae55cd16f830698633bfc1c964f62db6363203fc9465a243"
+        },
+        {
+          "name": "visualize",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/isolate_scene_component.py",
+          "ast_sha256": "cfa46090873a6eafc301e4b78c1faa505ab5c3bb583a64fe2c6e8ce772c1bd20"
+        }
+      ],
+      "adapted_definitions": [
+        "fine_component",
+        "scan"
+      ]
+    },
+    {
+      "module": "direction_contract.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_scene_direction_single_views.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/independent_direction_contract.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "decision",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/independent_direction_contract.py",
+          "ast_sha256": "8ef3c6fcd0cca8c65dbe588b4d00503d575a9d506365942b2d3f0f67e5f7ce7d"
+        }
+      ],
+      "adapted_definitions": [
+        "original_decision"
+      ]
+    },
+    {
+      "module": "backrest.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_geometric_backrest.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "decision",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_geometric_backrest.py",
+          "ast_sha256": "df670a605685762578e62b9da9fc3da05302bc65c37289a624614a941edcdb3f"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "direction.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_scene_direction_v5.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "direction_decision",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_scene_direction_v5.py",
+          "ast_sha256": "ca866c063318f38ffd9b912b2ee57e9e7f32e1c14b235617fd9531d942d885e9"
+        },
+        {
+          "name": "project",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_scene_direction_v5.py",
+          "ast_sha256": "1c05e347bd721b793883ca4777ad870845e5306c210bcaa50f442e94dd4a4de5"
+        },
+        {
+          "name": "draw_arrow",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_scene_direction_v5.py",
+          "ast_sha256": "b4d82cbe77d89eb45fc0584cc573fe1c9c85c6877bb88d071b464fd013f8cba2"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "direction_revision.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_direction.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_direction_v4.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_direction_v5.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "run",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/revise_scene_direction.py",
+          "ast_sha256": "6a1865dbe7d3e2688afd9ba9880e7a30ea2e50b6ea6a2e2627a890cdacec7dcd"
+        }
+      ],
+      "adapted_definitions": [
+        "direction_decision"
+      ]
+    },
+    {
+      "module": "object_views.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/scene_object_views.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "bbox_in_camera",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/scene_object_views.py",
+          "ast_sha256": "f78ad3acfe35327a7f538994b845f63bc5cea7c4209dbca6cb6f4d2c1701414f"
+        },
+        {
+          "name": "project_masks",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/scene_object_views.py",
+          "ast_sha256": "a4e90c00e06b0e1120e76061b2dd0765c5c90e9fc902020d0029fa22611a5303"
+        }
+      ],
+      "adapted_definitions": [
+        "run"
+      ]
+    },
+    {
+      "module": "context_review.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v2.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v3.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_mesh_context.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_recovery.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "atomic_source",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v2.py",
+          "ast_sha256": "65bc4ae39e25fd6b094dca1e0041b87cf9a3e4f78b05e343067744165337e667"
+        },
+        {
+          "name": "touches_border",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v3.py",
+          "ast_sha256": "31660c2ac805805609d51616c8556d2dd65fb250a3971062c6488d3fe36d8079"
+        },
+        {
+          "name": "member_groups",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v3.py",
+          "ast_sha256": "ea5bd839d28417b48e4ae6510a34c0ab7adfb2c0b5835e7e7e5d9e553d26721a"
+        },
+        {
+          "name": "crop_bounds",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v3.py",
+          "ast_sha256": "bc01a33f56366c1647669e2a5389368912633b7782132f9c6c220e1212182175"
+        },
+        {
+          "name": "evidence",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_v3.py",
+          "ast_sha256": "e38a300c7a848ea40c450e1ff81f21eafe05636d41e1de4ca18bc00078338415"
+        },
+        {
+          "name": "insufficient_views",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/review_object_context_recovery.py",
+          "ast_sha256": "eb9274a566f8300493ee894c14b8a57c7b25ace9fa612da080abe42fc27eaf6e"
+        }
+      ],
+      "adapted_definitions": [
+        "run",
+        "review_projection",
+        "recover"
+      ]
+    },
+    {
+      "module": "publication.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_context.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_context_v3.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_geometry_review_v5.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_envelope_review.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_backrest_review.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "projection_views",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_geometry_review_v5.py",
+          "ast_sha256": "9ddfbff467c1a68de4a90e322ccfc7574d667fa7d97cd782e47b0e75eae90e42"
+        },
+        {
+          "name": "conflicts",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_backrest_review.py",
+          "ast_sha256": "db94f7ad55ca4495f79006702cae2ebd07c461ad9d7093d75727b427fa8c8719"
+        }
+      ],
+      "adapted_definitions": [
+        "review_context",
+        "review_geometry",
+        "review_envelope",
+        "review_backrest"
+      ]
+    },
+    {
+      "module": "checkpoints.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/batch_contract.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene.py"
+      ],
+      "unchanged_top_level_definitions": [
+        {
+          "name": "checkpoint",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/batch_contract.py",
+          "ast_sha256": "6b23fb4ee973f64ce05e6b73de1f920a3699f6d742fe86bcec95f3efb8205033"
+        },
+        {
+          "name": "load_checkpoint",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/batch_contract.py",
+          "ast_sha256": "d5097b6a656c63a9ed630d1287a60621116f35a42fa100baf98f2d680a5e5a3c"
+        },
+        {
+          "name": "reuse",
+          "source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene.py",
+          "ast_sha256": "9352e46519f0e4bc1cd22aa1c63d861b886c1922ace9211fa17120d36daf7361"
+        }
+      ],
+      "adapted_definitions": [
+        "phase"
+      ]
+    },
+    {
+      "module": "__init__.py",
+      "origin_files": [
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene.py",
+        "agent9/methods/p550_scene_understanding_decoupled_20260905/code/process_scene_v2.py"
+      ],
+      "unchanged_top_level_definitions": [],
+      "adapted_definitions": [
+        "recover_parts",
+        "understand_atoms",
+        "build"
+      ]
+    }
+  ],
+  "adaptations": [
+    "Static relative imports replace old module/path loaders",
+    "Explicit Qwen client replaces deployment-global transport and hidden cooperative queue",
+    "Current context-v3, composition-v2, independent-camera-v5 and backrest-v5 changes folded statically",
+    "CLI subprocess publication steps become ordinary function calls with sealed phase checkpoints",
+    "Old implicit hardcoded pilot lookup removed; only explicitly bound checkpoints or atomic_receipt reused",
+    "Legacy bundled/per-view direction review branches are omitted: current three independent cameras and semantic-backrest reviews remain",
+    "HTML report replaced by PNG contact sheets and JSON without changes to algorithm decisions"
+  ],
+  "cpu_comparison": {
+    "scene_id": "014",
+    "objects": 34,
+    "object_records_equal_except_surface_artifact_paths": true,
+    "surface_arrays_bit_exact": true,
+    "navigation_field_arrays_bit_exact": [
+      "obstacles",
+      "clearance",
+      "free"
+    ],
+    "seconds": 13.803370942128822,
+    "live_model_calls": 0,
+    "full_scene_build_with_live_models_tested": false
+  }
+}

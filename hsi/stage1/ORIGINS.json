@@ -1,0 +1,736 @@
+{
+  "schema": "hsi.stage1.static_migration_origin.v1",
+  "unchanged_definition_count": 157,
+  "modules": [
+    {
+      "module": "_surface.py",
+      "original_source": "agent9/methods/p523_current_only_multiscene_20260902/stage1/code/build_target_bound_surface_v1.py",
+      "original_source_sha256": "9632069944641c3a19624f268708896509e81e91094fb85acbdc096882811889",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "SurfaceError",
+          "ast_sha256": "e2f32797589399ba9394290f62b6e80daa185b162f5917332306986c79699b7b"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "1a8a1a9b228018e4ba9339bda55034d05cf58270cca89f4bbad196bde07f12fb"
+        },
+        {
+          "name": "canonical_hash",
+          "ast_sha256": "7fcdbcbea6e35ee013209785b84fb843a0f6a868980732f0cc88b494282be884"
+        },
+        {
+          "name": "sha256_file",
+          "ast_sha256": "8e698d12ba1eb9e5b3c882cdbb7916ec4c247fc4675ade1093bf8373520a07a2"
+        },
+        {
+          "name": "artifact",
+          "ast_sha256": "ab36db8198d01f102172a79fa0b6f137d071936bf09f0558122f78268b66b3aa"
+        },
+        {
+          "name": "atomic_json",
+          "ast_sha256": "e0a8b2b6b241cceba0cb007b3a7f823c8e1c42a060ac1b371412506da94e1c5b"
+        },
+        {
+          "name": "atomic_npz",
+          "ast_sha256": "0488090a4a537f7b16aec489cd7301aa54448f824ca964891f12172524a33175"
+        },
+        {
+          "name": "atomic_npy",
+          "ast_sha256": "975b8c9cba6e95de1ce623d139ec5139a2c8053ab99ed64cd103e1483169a397"
+        },
+        {
+          "name": "read_json",
+          "ast_sha256": "c16a4dc86f9aca0d525bb97545735f89fef6245e059b3cd293858e10e045fc1c"
+        },
+        {
+          "name": "verify_payload_hash",
+          "ast_sha256": "df4eca09fdd1beed7f8df6d39ed5fde766bcff4b936ca468aa8ddb00b0b2623f"
+        },
+        {
+          "name": "reject_historical_result",
+          "ast_sha256": "1e791981d9d1897b05ea67041d316c80d07ba34435f3532762aebaa06e02de57"
+        },
+        {
+          "name": "int64_sha256",
+          "ast_sha256": "cb28896a75ee1c116eb9163143f23d1a5fb6f9a6da203fc6ae00a1c60db89f46"
+        },
+        {
+          "name": "bool_content_sha256",
+          "ast_sha256": "467fd573ee12083084124f43d6c56d201324489ee04695add0006ab6c7c08535"
+        },
+        {
+          "name": "finite_vector",
+          "ast_sha256": "9bde69ee017b4bf4993d279c97124be9ad8f16bc7e926b6961b2a60b0644d9bc"
+        },
+        {
+          "name": "world_occupancy",
+          "ast_sha256": "ca399893c3ff5bcd1c1709bb5cb0534f673817f8384cdcd33d75e5ec268d1830"
+        },
+        {
+          "name": "native_occupancy",
+          "ast_sha256": "f633bdf7e580e2502d799b27fd68562a74be66f4a882a2556bbd446d03a15e08"
+        },
+        {
+          "name": "load_obj_world_zup",
+          "ast_sha256": "d2a8d0041311a75b674bfa7f162f9d813623e6be5af05c3853e4242768acfdb5"
+        },
+        {
+          "name": "connected_face_components",
+          "ast_sha256": "036e5928d2d95e9c38635f3b1f82188a799eec5f06665abf51a17af2e12c97f7"
+        },
+        {
+          "name": "SurfaceConfig",
+          "ast_sha256": "78069a247fefab0c2f44d1554f19c68aad43c0302875a0a9dfdfa2ae559a2d0b"
+        },
+        {
+          "name": "ExtractedSurface",
+          "ast_sha256": "82808f2ba534f942119d3c96fac1ab725f54eeeee4cb4774abc30d37f2699849"
+        },
+        {
+          "name": "build_navigation_fields",
+          "ast_sha256": "5d9d53eb18ec9e41a79163ede98c5898854f931927a016d135fb6730c2036211"
+        },
+        {
+          "name": "point_to_cell",
+          "ast_sha256": "1de17c50f81b50941dbbeb09077407a7dbb26235f27e2dfd19d96f4954476bf4"
+        },
+        {
+          "name": "cell_center",
+          "ast_sha256": "a3dfee2ff358bf693be8e68a5caaf3b2ca95a61e480ea76edf6029de8c4f704e"
+        },
+        {
+          "name": "nearest_true",
+          "ast_sha256": "7b68a755022a6766e804ba94fee998bb912e1848716794098eed297d9e3d55dc"
+        },
+        {
+          "name": "flood_distances",
+          "ast_sha256": "234b3d552e98411cf8af546dfdbe1bf0233ee7d3af36782b4774819ef2aa9bc7"
+        },
+        {
+          "name": "extract_support_surface",
+          "ast_sha256": "74d45e3937b3094a8fa38ad0d9ca51fe3f2b5bc70876981823e3a0f29cfd29bd"
+        },
+        {
+          "name": "infer_front_direction",
+          "ast_sha256": "67fe20a7b9ef76c3d0774125e753df3f3d5363e43a59ff4085eb08e497961232"
+        },
+        {
+          "name": "approach_options",
+          "ast_sha256": "1ffa44140e85487b733be49462683e48be6dc77f09b53b24375d52f4732a175d"
+        },
+        {
+          "name": "route_prefilter",
+          "ast_sha256": "1702f26ce0bc5ac9c39be4eb5112a8690a555a0683940283fa17f0b47e3425f9"
+        },
+        {
+          "name": "target_mask_from_support",
+          "ast_sha256": "4bf4bbcc9c72e1b9b5824e9d630ce8c4affe3a1e12c9a0a1c5e8a640dba9d10d"
+        },
+        {
+          "name": "load_and_validate_inputs",
+          "ast_sha256": "2cb4de3406b5a01c184e37db120a2fdd9950686ad60c9cc5d83b84ce8ec0ec03"
+        },
+        {
+          "name": "candidate_target_specs",
+          "ast_sha256": "d6eb8b2392fde099a89c94bac2fa2becbe90d5a56a06ef9b28014d18f9a21303"
+        },
+        {
+          "name": "seating_alias_shape_evidence",
+          "ast_sha256": "47a10d889b7752bdd72251f553a212914c9297c73467f346f1cea24f31ee797c"
+        }
+      ],
+      "changed_or_new_definitions": [
+        "build"
+      ]
+    },
+    {
+      "module": "_roadmap.py",
+      "original_source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/compile_stage1_roadmap_request_v1.py",
+      "original_source_sha256": "a59d379f1aa1821082edc5e42aa28f601199083e7ce2c58393b5ef29fab78053",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "CompileError",
+          "ast_sha256": "50dc4f6fc7533663a571ea41f19fe260602132137a1a8bde7693a6bbe927002e"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "b1097f644a2efce91c13264abab20eccab5931182fa7962c7ed2b1074008ff1e"
+        },
+        {
+          "name": "sha256_file",
+          "ast_sha256": "8e698d12ba1eb9e5b3c882cdbb7916ec4c247fc4675ade1093bf8373520a07a2"
+        },
+        {
+          "name": "artifact",
+          "ast_sha256": "ab36db8198d01f102172a79fa0b6f137d071936bf09f0558122f78268b66b3aa"
+        },
+        {
+          "name": "atomic_json",
+          "ast_sha256": "6162cc5186386dbc0649ddafd1d63f86d64c9b40c6dfd892caf3ce16db7ffe35"
+        },
+        {
+          "name": "atomic_npz",
+          "ast_sha256": "e56b36c0496cd5629faa11d13c34b27d748c25b6996ed43b88b0b26548430d74"
+        },
+        {
+          "name": "read_json",
+          "ast_sha256": "4578df58a404e18312efea0fc661d0f1aae60d4954b85e8b574e2244f74e7600"
+        },
+        {
+          "name": "finite_vector",
+          "ast_sha256": "401e4a705c263badb98bae3ca113c3b470bfc343ca0cbfe9f44c40ea43340c6e"
+        },
+        {
+          "name": "start_from_current_state",
+          "ast_sha256": "91dfe93775af1198539b6750f392e0fb0610f8bf50d6a90a86bf55dae596d962"
+        },
+        {
+          "name": "RoadmapConfig",
+          "ast_sha256": "ea9832f17ce075b888888adbc1c1d80687be37a30b4b6c9b9a91dcea759a18ae"
+        },
+        {
+          "name": "world_occupancy",
+          "ast_sha256": "d8e6549266ddd11d107894659f3dde788fe18fea9fc4cf170e0eee9c4371c0e1"
+        },
+        {
+          "name": "build_roadmap",
+          "ast_sha256": "800d2c522b89c4aa7b1c80bcd7996355b102034659066ff613f02805cb7830b1"
+        },
+        {
+          "name": "relax_target_interaction_approaches",
+          "ast_sha256": "0419e3c855da303f23f39dd2e890c8fa2a7ae5d1a5d9aeb59f870adf4522cc7c"
+        },
+        {
+          "name": "point_to_cell",
+          "ast_sha256": "d7fc1b2123c9e76ff22242cc0327cee10d993580d4bd4e3aed1b34e06e3ec13e"
+        },
+        {
+          "name": "cell_center",
+          "ast_sha256": "97a5908c4a09355fffa98a15a034a764d23d1edee41d51eb76948e56e8fba8c6"
+        },
+        {
+          "name": "nearest_mask_cell",
+          "ast_sha256": "beb42e2e49c439cf28ca763572f990b3421ea5229a025cbdb3f204028632914a"
+        },
+        {
+          "name": "four_connected_distances",
+          "ast_sha256": "7c8333c18bb2fab74e6af113e15c20ede9f1b27fa93c94b02029943dc86642b1"
+        },
+        {
+          "name": "validate_stage1",
+          "ast_sha256": "eb021557fcd8bd9968b0103dea9d480ce158818e52e8b4eb7d70df2bd70cae86"
+        },
+        {
+          "name": "audit_approaches",
+          "ast_sha256": "69d60f825f8b2984ab3f718a6d175087364caa086f254bf9f0c8d7338cae49d1"
+        },
+        {
+          "name": "compile_request",
+          "ast_sha256": "76a9a90389b98cbd0ee9e6af2e6557e9d42ecca86c9718de4791e7d9984fcfc1"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "_current_roadmap.py",
+      "original_source": "agent9/methods/p523_current_only_multiscene_20260902/stage1/code/compile_current_only_roadmap_request_v2.py",
+      "original_source_sha256": "54e3ab8e2d4a1205db6261b5bc36c3354f0b732538f4a0887264a5f3a20e5f41",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "CurrentRoadmapError",
+          "ast_sha256": "bf3c140f6b56f0c71790249ee6502952224f74ab5847961d5e36ed8e72626155"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "e7fa31d30374c96b294f67eb02ba2a378672f557c74df3ccee66931f14ed590e"
+        },
+        {
+          "name": "canonical_hash",
+          "ast_sha256": "c45202bcb0ce1a674ecf69c59b0e91b7bb4bc56f01e7ae87318dcd5aa81f4e53"
+        },
+        {
+          "name": "read_json",
+          "ast_sha256": "a47c73315f676aef5337663637a5ac5b742ec9e2312678dc3e862c22142b6a1a"
+        },
+        {
+          "name": "verify_payload_hash",
+          "ast_sha256": "e6a6aade753cd232bd7e33c7f00eafa887ec90deac61800cd65bd1d27107627f"
+        },
+        {
+          "name": "reject_historical",
+          "ast_sha256": "03e2bebbea14a6902d8bc918f73b161e8acbe102af508c9a58554f67772f0b50"
+        },
+        {
+          "name": "finite_vector",
+          "ast_sha256": "51129a86c97d1b990ba25ceeceb78b84f23f9638c8ccb4b636e0991375e66af9"
+        },
+        {
+          "name": "selected_candidate",
+          "ast_sha256": "9bd0ccdb643d3bc6a49ce64e8d48428d9a6f6645dafd8348a3c89fb53dcd7138"
+        },
+        {
+          "name": "validate_target_pair",
+          "ast_sha256": "4c92d08f650d3d80d86b894f298564291a310774580faf0c246b478b2b6587f1"
+        },
+        {
+          "name": "audit_options",
+          "ast_sha256": "273033f99fde6e95fea0ab1e99fee0c5fc8217be4e1e0c7cdc895cfd567e935c"
+        },
+        {
+          "name": "select_path_cost_first_option",
+          "ast_sha256": "95a71b9539cb5cfa99a0a511a675aec60010c5fef48c5c362108be7cc0e4eb84"
+        },
+        {
+          "name": "filtered_target",
+          "ast_sha256": "6d6473235cf7d8a5d8a4aa8b16235fab611bc6dfd25e3d581dcdd09295b414ad"
+        },
+        {
+          "name": "compile_current_request",
+          "ast_sha256": "05608a76c3a803c4f0c70fb0e928bd6ac899e9b75875cbc90ef4d2fb63bb3b9c"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "_navmesh.py",
+      "original_source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/navmesh_backend_v1.py",
+      "original_source_sha256": "e22129ac08eac8d6ad36b6ca746647bf00a8c7a590b0570b5d76e53743634df7",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "NavmeshBackendError",
+          "ast_sha256": "3d27eb9e2904617a398c6151863cd661cd06fcc187daf4bbb1ca413be8c6a26b"
+        },
+        {
+          "name": "BackendUnavailable",
+          "ast_sha256": "a0618dd18353da565d882a4819808ffecfb847527d2d7963dda42de0cd0cdd7b"
+        },
+        {
+          "name": "ContractError",
+          "ast_sha256": "52f7b0525364a1ed9c3fdf19ecb3abd91171deaa8bf176a2731edf16e75ffbe1"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "58eb5d7b690a94abaec32460486300d898debccfcabedebbc6bcc3e917ecc25d"
+        },
+        {
+          "name": "sha256_file",
+          "ast_sha256": "8e698d12ba1eb9e5b3c882cdbb7916ec4c247fc4675ade1093bf8373520a07a2"
+        },
+        {
+          "name": "route_sha256",
+          "ast_sha256": "a6eacaf0bb02ddd0238608e8698f216eb5539e76700a08c21a52b4a2dbeb5e2f"
+        },
+        {
+          "name": "read_json_object",
+          "ast_sha256": "fbed7842a31005459f6ebd2bc27cc8caa787d042433a58b327dc1e12c26bbf25"
+        },
+        {
+          "name": "atomic_json",
+          "ast_sha256": "6162cc5186386dbc0649ddafd1d63f86d64c9b40c6dfd892caf3ce16db7ffe35"
+        },
+        {
+          "name": "finite_vector",
+          "ast_sha256": "b8222dcae7a1912c31ba394714ea57339f0c15ffbd232c73c1ac346457564e8e"
+        },
+        {
+          "name": "world_to_cell",
+          "ast_sha256": "7a4ca3d76423a827275fc96ecb716b38ef3e4b3bd66b194205b8beb5fd612eca"
+        },
+        {
+          "name": "cell_center",
+          "ast_sha256": "ea5af5d3f6d2e7bcd023556cc375e065fb3c46311e45cf9079d4294153560477"
+        },
+        {
+          "name": "RoadmapRequest",
+          "ast_sha256": "c526808ae16a4dc0c352f268ef36b787095999fb0348001278d6e88d0d8fbdbb"
+        },
+        {
+          "name": "_resolve_artifact_path",
+          "ast_sha256": "63cd4fc117722619b08ca60a955c682cdef2ee36ef300b37c769ac0824238a97"
+        },
+        {
+          "name": "load_request",
+          "ast_sha256": "10b8fc4d055bae4d25305880ee06bb16b8091c14ee2342da08aca8f5313219f2"
+        },
+        {
+          "name": "cell_meets_navigation_contract",
+          "ast_sha256": "f04521b19f566f5c6238e5c53499b66720c9a35586496ca9facdae674a44ef54"
+        },
+        {
+          "name": "build_cell_polygon_navmesh",
+          "ast_sha256": "85f7adafdc5b150d8caf3df8bc8851a962bb54bada7b253d7e0b8690bd740871"
+        },
+        {
+          "name": "BackendIdentity",
+          "ast_sha256": "209bd6bf6c9c585de5d7aca9fe0bd2ba7d726f89a18fb78bf29586ee22a2f233"
+        },
+        {
+          "name": "remove_consecutive_duplicates",
+          "ast_sha256": "75fdd48c3dcb242b4fd1e32504ea7a5ca58d5e4ade51eb9a0c7f3b7053153475"
+        },
+        {
+          "name": "densify_route",
+          "ast_sha256": "da30778e205b77f2403581cfc5a3361060e12c35dc9cf2934ce00ee766c30ae5"
+        },
+        {
+          "name": "validate_route",
+          "ast_sha256": "95f8b7de68b384a0332f9fd22649eb69586b84e385f809ad7f48f6a8325b9428"
+        },
+        {
+          "name": "_pathfinder_route",
+          "ast_sha256": "654add184e06613ad8234e57962c0aae6a82f6a0cadf29b804074129835da6b0"
+        },
+        {
+          "name": "make_output_payload",
+          "ast_sha256": "0cce58e33a144b25877f551d7411163a12d6fb3500a8852a27283b6ceb569fb7"
+        },
+        {
+          "name": "validate_output_payload",
+          "ast_sha256": "93be62758f6ee136494565c02399df8eca8b83ed7b6a25df4504f935775fff5c"
+        },
+        {
+          "name": "run",
+          "ast_sha256": "691e5f85ba0ad6f4e11a0584edc6b512733cb59719dad366daf394a87819eb6e"
+        }
+      ],
+      "changed_or_new_definitions": [
+        "load_pynavmesh"
+      ]
+    },
+    {
+      "module": "_corridor.py",
+      "original_source": "agent9/methods/p523_current_only_multiscene_20260902/stage1/code/run_current_only_polygon_corridor_v1.py",
+      "original_source_sha256": "2aab73a3d874378b1b36f63e6e7a60e6ac0c18d029ddc2733d6f0b61fc72b39b",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "StackAudit",
+          "ast_sha256": "ca54ae998fc122eec196d68e5a90ec906abfc18269ce1a759826b01b8a8de12d"
+        },
+        {
+          "name": "InteriorizedRoute",
+          "ast_sha256": "d7afe3cbb2ecea9c005a6bfe9b0c472f1706977777dec36d6957d7daca3ed38e"
+        },
+        {
+          "name": "canonical_hash",
+          "ast_sha256": "c45202bcb0ce1a674ecf69c59b0e91b7bb4bc56f01e7ae87318dcd5aa81f4e53"
+        },
+        {
+          "name": "artifact",
+          "ast_sha256": "4b8ce41e51872a54daf9be689c43ff888903dee647f6a7e3d1a820ff2ceca9a1"
+        },
+        {
+          "name": "configure_scene_stack",
+          "ast_sha256": "17574d3f295246f974e37a89f5244126b58233c97e0c5f1960c6d7e7fb2b8606"
+        },
+        {
+          "name": "_oversample_polyline",
+          "ast_sha256": "cb227ba5c965e6d98ee27f45db2b0d44a50f2821adbfd1a90f2a384d42de8e2c"
+        },
+        {
+          "name": "_point_box_distance",
+          "ast_sha256": "733aa51bb022b0ee302f70956d6175dd23c8dbbc5c379ba52800d3b83adb6b81"
+        },
+        {
+          "name": "_free_cells_near_point",
+          "ast_sha256": "73c6a093caadab41ba88fe05df39e3e095dc3130bb0ff5678594275fc9a51e1a"
+        },
+        {
+          "name": "_segment_intersects_expanded_cell",
+          "ast_sha256": "fa63900a92cca5217896fe33a904df7189d3cacea29f6fd60047ee70b5b791ab"
+        },
+        {
+          "name": "_cell_touched_by_raw_route",
+          "ast_sha256": "3ae51ec344ea4cf7d349d9523a8574ea91dd620b7f07739190f6767cac53a79b"
+        },
+        {
+          "name": "_manhattan",
+          "ast_sha256": "604f8faaf9ed9c09c361efa3acc1368f0dc35c0af26e95f7c7b2f99829c5ff01"
+        },
+        {
+          "name": "_candidate_score",
+          "ast_sha256": "85ede6ca0aa761281a7fba22bc22123dfc0511179867d112256a512546469e64"
+        },
+        {
+          "name": "_bridge_diagonal",
+          "ast_sha256": "3b1b493d8d82d6d36a3cee212a782fc344e5dc279df3ad54a17b1f963675331d"
+        },
+        {
+          "name": "_distance_to_polyline",
+          "ast_sha256": "e265c2bf75f7f1bd8fd072f8cb2afb3ef2c2819ed3cef8d33b7f4b5511e89508"
+        },
+        {
+          "name": "interiorize_raw_polygon_corridor",
+          "ast_sha256": "bf9ee03f98931b2732c2e4dcde1b7184769d6715b723c43c85fcda7842eb189e"
+        },
+        {
+          "name": "first_strict_violation",
+          "ast_sha256": "fc7371fbc0a1050b9a4677cfa2b093a16c2dd746258dd3e11c7da676fbc6c96b"
+        },
+        {
+          "name": "_cell_sequence_sha256",
+          "ast_sha256": "4e4e9358602279249415d088abb60921947749d14b6e533ea4ccdc250b04c2e6"
+        },
+        {
+          "name": "run",
+          "ast_sha256": "de77dcc656892b6f4946ed4be7c4b7161ff2c299e07391b7fe02c1f08efb49b6"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "_keynodes.py",
+      "original_source": "agent9/methods/p508_lingo_sam3_scene_first_stage1_20260831/code/extract_navmesh_key_nodes_v1.py",
+      "original_source_sha256": "d434da6fbddd17ee6ee0ac44e20d6e7bf785c3888040389db94c80db0e77499d",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "KeyNodeError",
+          "ast_sha256": "dbc8859fce6284a06a0c74294db3ea6c38051925cdec9f332c5e33f5766207ce"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "6dc92e26f4829c70d6070f47eb265b7639d2fd4d6cde5e215ae0e4dd5a2f350f"
+        },
+        {
+          "name": "sha256_file",
+          "ast_sha256": "8e698d12ba1eb9e5b3c882cdbb7916ec4c247fc4675ade1093bf8373520a07a2"
+        },
+        {
+          "name": "artifact",
+          "ast_sha256": "ab36db8198d01f102172a79fa0b6f137d071936bf09f0558122f78268b66b3aa"
+        },
+        {
+          "name": "read_json",
+          "ast_sha256": "990eab4d53a4ab18c1f1119234e72ee210fb3a0bed4225c9addec0cdffe49708"
+        },
+        {
+          "name": "atomic_json",
+          "ast_sha256": "6162cc5186386dbc0649ddafd1d63f86d64c9b40c6dfd892caf3ce16db7ffe35"
+        },
+        {
+          "name": "canonical_hash",
+          "ast_sha256": "c45202bcb0ce1a674ecf69c59b0e91b7bb4bc56f01e7ae87318dcd5aa81f4e53"
+        },
+        {
+          "name": "finite_points",
+          "ast_sha256": "d2e671bf6c817604326b883b91008c39c2db9576de3da5159a79a9d20ac1ecb8"
+        },
+        {
+          "name": "cumulative_arclength",
+          "ast_sha256": "ee3231c85c1a12fdd189f415785692517da44ced151acaab74b3e80429f9ef37"
+        },
+        {
+          "name": "wrap_angle",
+          "ast_sha256": "fb81f4d4e6fe88c3f102674b250ad81510a761ee8d905250f3b42175206d7eaa"
+        },
+        {
+          "name": "point_to_segment_distances",
+          "ast_sha256": "ba4b764b4435cdf0ac768bba08f495c0c4a032e435ae9aa9ff9404f554e58b9c"
+        },
+        {
+          "name": "semantic_key_indices",
+          "ast_sha256": "913618f7487ebfcff2098dae38f175011f760ae77640ca8b2b9d4805bd06b315"
+        },
+        {
+          "name": "rdp_key_indices",
+          "ast_sha256": "76a02bf25884569c0e7275007e69df579ba3bb54beefd16fb7625e285c3b70ca"
+        },
+        {
+          "name": "route_clearances",
+          "ast_sha256": "536b0c420694caaaaba42415824aca083709d221a9413452786a11fa4bfb7c28"
+        },
+        {
+          "name": "clearance_event_indices",
+          "ast_sha256": "747cd4f312113e2f134bb9fb10e6a0c5f54388529d3f5807224e816ef480031d"
+        },
+        {
+          "name": "route_index_at_distance",
+          "ast_sha256": "f065acef1c674fc89b58168e0832577cfb9f6f7ac71b181ba82613775da76ab7"
+        },
+        {
+          "name": "tangent_yaws",
+          "ast_sha256": "c0acf7b8891aab231b88aa32cb7c064cf9403091300579b56a6637d937ac0d75"
+        },
+        {
+          "name": "segment_is_human_free",
+          "ast_sha256": "89140f43271b04515ea9e7de0b3b2fe4834ec2aad2ff6bbf89ff2b9c8e4d3506"
+        },
+        {
+          "name": "map_raw_to_dense",
+          "ast_sha256": "ea0f1a10b05d4a0c915fc5e5c7d8496edabb1589a032d5348d8ed4bf137d2ec5"
+        },
+        {
+          "name": "collision_safe_control_indices",
+          "ast_sha256": "bedd2e8f752c8eb960328c0f31c6667305f4ba38adb8df7bc2e58a7f8c397561"
+        },
+        {
+          "name": "collision_safe_dense_control_indices",
+          "ast_sha256": "72b9b3430b0ddceab309362d1509a4f4386c72ec55333a1f78f6680a544c0300"
+        },
+        {
+          "name": "validate_polygon_corridor_interiorization",
+          "ast_sha256": "d7c1e27d04070757c15e166a2320d32ffae4998bf951226dd1d083a5562b85f5"
+        },
+        {
+          "name": "selected_target_contract",
+          "ast_sha256": "ad7cc69db7f3908a955c0dfbce9718b70d3070483ccc478eb1fd20ed860d5d35"
+        },
+        {
+          "name": "run",
+          "ast_sha256": "2c3f64d7b753278477e0321e3981fa933482f974df7ff0aeb02f8a1a2ff99e75"
+        }
+      ],
+      "changed_or_new_definitions": [
+        "adaptive_semantic_key_indices"
+      ]
+    },
+    {
+      "module": "_bundle.py",
+      "original_source": "agent9/methods/p523_current_only_multiscene_20260902/stage1/code/finalize_stage1_bundle_v1.py",
+      "original_source_sha256": "d761e57bf41072cc2fd558ddac1038480a76e78baab8e61d319d010f164b0f9d",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "BundleError",
+          "ast_sha256": "73b7aeae581f0869fe22e20e57859f9965ee4ebab44bb63ebbc04db8bb769769"
+        },
+        {
+          "name": "require",
+          "ast_sha256": "63aa57c5c6941b7d66da729b3baf54daae19a926e9ee39ee566c14b1a793eec0"
+        },
+        {
+          "name": "canonical_hash",
+          "ast_sha256": "7fcdbcbea6e35ee013209785b84fb843a0f6a868980732f0cc88b494282be884"
+        },
+        {
+          "name": "sha256_file",
+          "ast_sha256": "8e698d12ba1eb9e5b3c882cdbb7916ec4c247fc4675ade1093bf8373520a07a2"
+        },
+        {
+          "name": "artifact",
+          "ast_sha256": "ab36db8198d01f102172a79fa0b6f137d071936bf09f0558122f78268b66b3aa"
+        },
+        {
+          "name": "atomic_json",
+          "ast_sha256": "e0a8b2b6b241cceba0cb007b3a7f823c8e1c42a060ac1b371412506da94e1c5b"
+        },
+        {
+          "name": "read_json",
+          "ast_sha256": "c16a4dc86f9aca0d525bb97545735f89fef6245e059b3cd293858e10e045fc1c"
+        },
+        {
+          "name": "verify_payload_hash",
+          "ast_sha256": "df4eca09fdd1beed7f8df6d39ed5fde766bcff4b936ca468aa8ddb00b0b2623f"
+        },
+        {
+          "name": "reject_historical_result",
+          "ast_sha256": "c0c19e296f18c235416b306c17654427e24898d9518e1e903a0ef83dae33b473"
+        },
+        {
+          "name": "resolve_record",
+          "ast_sha256": "74fd817a42525bb9573c58e032c3bd5a1c77ba7c321033d87bbafcbdd3a36c7a"
+        },
+        {
+          "name": "finite_array",
+          "ast_sha256": "7a7642e27752529e8ed27c9acbf2c6fb797714f62d63aed6abac07cbb49cafe4"
+        },
+        {
+          "name": "route_length",
+          "ast_sha256": "0cea52c5f20b16a11caa040d464d31dd95ee43e009f3e3b1d6bd4c7c42d6367b"
+        },
+        {
+          "name": "same_target_semantics",
+          "ast_sha256": "854344a3ec35271748641302407907f491ea78337e3cc37ca23d68b98726789f"
+        },
+        {
+          "name": "finalize",
+          "ast_sha256": "b02de2f75adf9155ef10db5d9887f59cfbda8fc92257910fa5061cd0b5b35e4c"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "region_geometry.py",
+      "original_source": "agent9/methods/p552_contact_region_route_20260906/code/region_geometry.py",
+      "original_source_sha256": "04b73b00aad269863299fe4de48f96c41d762610bba92b73a0caa8cbe0141b70",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "RegionPolicy",
+          "ast_sha256": "1d4bcbb84279dd8d29333b267887e3a6eefd2342b9fabde389c3cdb111727bf7"
+        },
+        {
+          "name": "grid_points",
+          "ast_sha256": "d74e8b6cf108b9bce4a58868c1b65ba8bac9a24fe2c86a58797c8f5ded8f0b71"
+        },
+        {
+          "name": "contact_footprint",
+          "ast_sha256": "10a9dedc23863bd7316ca9ec4bbb113d081a9fc26b9969336c6bede7ab82a715"
+        },
+        {
+          "name": "front_profile",
+          "ast_sha256": "68905bff351f6f3faa11bfd0b1a4540830c963931b00965c90b28c725f33efc8"
+        },
+        {
+          "name": "clear_connectors",
+          "ast_sha256": "d1ae91c48d9e84cd8ae1ad9b2f02607a9d5ca914f41df95cbbc24c74bddd21c5"
+        },
+        {
+          "name": "construct",
+          "ast_sha256": "e460a29c96028ea195f00b4b420ac0a17f6beffedd9bc1200fc59adc4ae65c8b"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "region_guard.py",
+      "original_source": "agent9/methods/p552_contact_region_route_20260906/code/region_guard.py",
+      "original_source_sha256": "ed8797b89c06952527140e40f2ea55a8c79e7fb4116f49ee738e6854b6d9b05c",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "check_points",
+          "ast_sha256": "7f75cc30bc407778428e43a95972cd4df6be4b005bffa8e1fd68885adb111eab"
+        },
+        {
+          "name": "validate_endpoint",
+          "ast_sha256": "b2dca3463b6189a49663dab7a97a083479dd0dbf2f3a2be00e7b922edfadbd9f"
+        },
+        {
+          "name": "validate_files",
+          "ast_sha256": "464d057c167b14af9cfb2b55f97fda222328182949eb002c4c097015f2cfeeaf"
+        }
+      ],
+      "changed_or_new_definitions": []
+    },
+    {
+      "module": "region_scene.py",
+      "original_source": "agent9/methods/p552_contact_region_route_20260906/code/region_scene.py",
+      "original_source_sha256": "21a5a6a2392a7eaddc3930eab29c95ea20c30f468ea73a44d9d57afd758c3e5d",
+      "unchanged_top_level_definitions": [],
+      "changed_or_new_definitions": [
+        "RegionBuilder"
+      ]
+    },
+    {
+      "module": "binding.py",
+      "original_source": "agent9/methods/p550_scene_understanding_decoupled_20260905/code/bind_route.py",
+      "original_source_sha256": "c5829cd8f97cb44b6307ae2f0dbc9a712c41e89dc6c80d2594ea345d85473dc7",
+      "unchanged_top_level_definitions": [
+        {
+          "name": "checked",
+          "ast_sha256": "4dc1e058571d278fa6de6c52ca2b9611946d1303d84540d1ebc77a719a256e0c"
+        },
+        {
+          "name": "bind",
+          "ast_sha256": "ddba6b969fc419f3047d75934fb7727081dbd505af42faa8fee65ee52e103180"
+        }
+      ],
+      "changed_or_new_definitions": []
+    }
+  ],
+  "allowed_structural_changes": {
+    "_surface.build": "Explicit SceneGeometryContext calls replace global monkey-patches; numerical functions retained.",
+    "_navmesh.load_pynavmesh": "Require externally installed official distribution; remove private workspace path injection; no source patching.",
+    "_keynodes.adaptive_semantic_key_indices": "Statically apply current mandatory START/GOAL/FINAL_APPROACH preservation and first-event-bounded clustering.",
+    "region_scene.RegionBuilder": "Source artifact points to renamed local module; numerical behavior unchanged."
+  },
+  "runtime_modules_contain_no_old_source_path_imports": true
+}
