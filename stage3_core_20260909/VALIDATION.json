@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "original_python_files_ast_parsed": 22,
+  "exact_symbols": 50,
+  "excerpt_lines": 1902,
+  "local_links_checked": 76,
+  "source_hashes_match_backup_and_current_workspace": true,
+  "model_imported": false,
+  "gpu_used": false,
+  "training_modified": false
+}

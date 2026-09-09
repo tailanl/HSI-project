@@ -1,0 +1,461 @@
+{
+  "schema": "hsi.stage3.core_extract.v1",
+  "source_backup": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/backups/stage3_current_20260909_141013",
+  "original_file_count": 22,
+  "sections": [
+    {
+      "file": "excerpts/01_scene.md",
+      "title": "场景：四路窄维编码与局部几何聚合",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "NarrowSceneBranch",
+          "start_line": 267,
+          "end_line": 287,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "316dff57670a00c4ee6825e8ba4a8f76e1f31a6fd8c8704e2865c3e78a8f10ab"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "SceneEncoder",
+          "start_line": 290,
+          "end_line": 319,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "15831a9914c2d24e805fb6fd72002ccf7344ccedf08786a69d2fb869e8cbb400"
+        },
+        {
+          "file": "hsi/stage3_joint/model.py",
+          "symbol": "SpatialNeighborhoodAggregation",
+          "start_line": 93,
+          "end_line": 141,
+          "source_sha256": "f58c8d28ba3c984055742b8db2ef86c2b60cec29339d26b7e229f4bc38a9a1ca",
+          "excerpt_sha256": "6736bdabf9142ae1991310c8be5d2f237d17b48ad52099bdf78a288b3d8c1580"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/02_keypose_context.md",
+      "title": "Keypose、语义变化、部位权重与双向上下文",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "ParallelFeatureEncoder",
+          "start_line": 195,
+          "end_line": 211,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "4839320e041dadda20e50c9c757b7ea0dfceb513a7762c0f94bb91dffb9ac10a"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "NarrowBodyBranch",
+          "start_line": 214,
+          "end_line": 229,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "1da9ff6d9fbbf23a16203ffa73c2f2508ef939758fbbcd8609ab0c3ccd53e8d9"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "ParallelBodyEncoder",
+          "start_line": 232,
+          "end_line": 239,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "b7754a00478318c55926cef57cbb5e38b39aed33f6f04e81df7f4ab2ed6671eb"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "NarrowContactBranch",
+          "start_line": 242,
+          "end_line": 253,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "caf21b4224b93d770f3a72a05f523bb18049662aa58d3f88d285aef6c9f3f495"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "ParallelContactEncoder",
+          "start_line": 256,
+          "end_line": 264,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "18f89b6bd04678b9a046d8fe98dd0357be6256bf4e474999f2807b3626880334"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "ContextEncoder.__init__",
+          "start_line": 323,
+          "end_line": 365,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "5080d6114de9aa2e5a81c7b3dc6199a20aa64dd588c38a0b6ac91e5128a9ce78"
+        },
+        {
+          "file": "hsi/stage3_joint/model.py",
+          "symbol": "LearnedPartImportance",
+          "start_line": 144,
+          "end_line": 165,
+          "source_sha256": "f58c8d28ba3c984055742b8db2ef86c2b60cec29339d26b7e229f4bc38a9a1ca",
+          "excerpt_sha256": "866407f4eb279ba068ba3531abaaaa2e489a487e897fc8ae9a7220c1acdb22da"
+        },
+        {
+          "file": "hsi/stage3_joint/model.py",
+          "symbol": "JointContextEncoder",
+          "start_line": 168,
+          "end_line": 315,
+          "source_sha256": "f58c8d28ba3c984055742b8db2ef86c2b60cec29339d26b7e229f4bc38a9a1ca",
+          "excerpt_sha256": "a5b2b8bae26a051eaffa9a81b72c1f6a2ba2bda44db65ce451f5e12b6201819e"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/03_timing.md",
+      "title": "初始时间分配与循环中的有界时间反馈",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/timing.py",
+          "symbol": "DurationHead",
+          "start_line": 254,
+          "end_line": 287,
+          "source_sha256": "0ffae556a4cb00d5480192da7990909c2eaefb078ec9906af525d69fe2b4ec14",
+          "excerpt_sha256": "0ff53abb7887157e7f26f867c75bf753b8781b7fee99e2c11dd69f9555750565"
+        },
+        {
+          "file": "hsi/stage3_sequence/timing.py",
+          "symbol": "allocate_durations",
+          "start_line": 174,
+          "end_line": 251,
+          "source_sha256": "0ffae556a4cb00d5480192da7990909c2eaefb078ec9906af525d69fe2b4ec14",
+          "excerpt_sha256": "1002c507914c452a33e171c43d039f360553cbfa0447aa5105fd2cc59bcf72b3"
+        },
+        {
+          "file": "hsi/stage3_sequence/timing_feedback.py",
+          "symbol": "TimingFeedbackHead",
+          "start_line": 153,
+          "end_line": 255,
+          "source_sha256": "9f492bcc429f049dd6577ad620b58bb40982f6c7728d3fc8d13b73ab80f753f2",
+          "excerpt_sha256": "1f5f557a74f99157ed36a77228d54c9a1c93c811cf387c3bd585daeb1d23afec"
+        },
+        {
+          "file": "hsi/stage3_sequence/timing_feedback.py",
+          "symbol": "TimingFeedbackResult.integer",
+          "start_line": 125,
+          "end_line": 150,
+          "source_sha256": "9f492bcc429f049dd6577ad620b58bb40982f6c7728d3fc8d13b73ab80f753f2",
+          "excerpt_sha256": "3dff2e02e58970d961fe8d90acca84fdf7f3ccc1aafff3b77afa32bb66f245d4"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/04_denoiser.md",
+      "title": "16层整序列扩散去噪主干",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "SequenceBlock",
+          "start_line": 462,
+          "end_line": 507,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "b9736f9e6176ff8dd4e7c46d13bc3969c1bcbb0bca19fd6de50a05cd76b62240"
+        },
+        {
+          "file": "hsi/stage3_sequence/model.py",
+          "symbol": "WholeSequenceDenoiser",
+          "start_line": 510,
+          "end_line": 593,
+          "source_sha256": "b6226b0a4a724c309d9167962fd611b30d791c6c9d10d0ffe0bac141c4025881",
+          "excerpt_sha256": "627d85a86916539bc7684d11fed0b8b35fd52bac046ef559e0eebf6a17634418"
+        },
+        {
+          "file": "hsi/stage3_joint/model.py",
+          "symbol": "ExpandedSequenceBlock",
+          "start_line": 318,
+          "end_line": 333,
+          "source_sha256": "f58c8d28ba3c984055742b8db2ef86c2b60cec29339d26b7e229f4bc38a9a1ca",
+          "excerpt_sha256": "756ba52431abbedece0e14d977ea5bcdb6ec565b38c0d7906d8362c901cf7936"
+        },
+        {
+          "file": "hsi/stage3_joint/model.py",
+          "symbol": "JointSequenceDenoiser",
+          "start_line": 336,
+          "end_line": 353,
+          "source_sha256": "f58c8d28ba3c984055742b8db2ef86c2b60cec29339d26b7e229f4bc38a9a1ca",
+          "excerpt_sha256": "eb5d48c80a416bf5504803f4b3847e096ed939c7df7696912d8529f4c477fd76"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/05_sampling.md",
+      "title": "DDIM完整采样循环与末端refine入口",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/sampling.py",
+          "symbol": "SamplingConfig",
+          "start_line": 17,
+          "end_line": 45,
+          "source_sha256": "877b8f4e17c2946377908c388f95717359f2ce6625821a681aa38f5038c51570",
+          "excerpt_sha256": "ece950d167bdb344a666f49cc7db9031597850b8c40855771bedce88677b9d77"
+        },
+        {
+          "file": "hsi/stage3_sequence/diffusion.py",
+          "symbol": "MotionDiffusion.ddim_step",
+          "start_line": 56,
+          "end_line": 65,
+          "source_sha256": "63aade44f42500f698b01702aada96a66fab9ca2952791a4ed7d2820e4be194f",
+          "excerpt_sha256": "0ce1232934bc139d2d6e1eba48bd3b8557afe0d77f90cb90652bcc89335da8e6"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/sampling.py",
+          "symbol": "_energy",
+          "start_line": 26,
+          "end_line": 34,
+          "source_sha256": "88d21eb85b0d257298e73718ad28d1d287ce648ee7262ee002fdc3819488c7eb",
+          "excerpt_sha256": "549648e24009cb8662507959f7f4f50ae2254c0fa7c06ca14c4bf8bcd2169eb0"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/sampling.py",
+          "symbol": "sample_motion",
+          "start_line": 37,
+          "end_line": 173,
+          "source_sha256": "88d21eb85b0d257298e73718ad28d1d287ce648ee7262ee002fdc3819488c7eb",
+          "excerpt_sha256": "b763f975b7098428edb2f07fd1f575f32cc8ba1ae7646ecc657067c5ff2083d3"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/sampling.py",
+          "symbol": "sample_joint_motion",
+          "start_line": 218,
+          "end_line": 294,
+          "source_sha256": "88d21eb85b0d257298e73718ad28d1d287ce648ee7262ee002fdc3819488c7eb",
+          "excerpt_sha256": "13d6b2af107a1728d279d37e1ab776d2a6e8287aeafece9f2283e8e3039adf9d"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/06_contact_policy.md",
+      "title": "v2接触与脚滑规则：不提前锁住未来落脚点",
+      "symbols": [
+        {
+          "file": "hsi/stage3_joint_v2/contacts.py",
+          "symbol": "event_contact_state",
+          "start_line": 32,
+          "end_line": 94,
+          "source_sha256": "1db6b033b5078203b4029f9115d8f73f19901c63f1cf287d9e3437ae663f130a",
+          "excerpt_sha256": "f6c617ed6ba416426d65936d237eedcbd494a8394812c39a5288db1ab9236325"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/contacts.py",
+          "symbol": "contact_event_losses",
+          "start_line": 97,
+          "end_line": 133,
+          "source_sha256": "1db6b033b5078203b4029f9115d8f73f19901c63f1cf287d9e3437ae663f130a",
+          "excerpt_sha256": "767071fa044c60399399a4cdc6e20c26fdbe5e29a0f8c2b5078dacdb0e6d4bb2"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/contacts.py",
+          "symbol": "foot_support_pairs",
+          "start_line": 136,
+          "end_line": 210,
+          "source_sha256": "1db6b033b5078203b4029f9115d8f73f19901c63f1cf287d9e3437ae663f130a",
+          "excerpt_sha256": "47b379f2e583901cae9997a6be9f6f6aacb72107fb087842da0a13d1a42fad8a"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/contacts.py",
+          "symbol": "foot_slip_terms",
+          "start_line": 213,
+          "end_line": 222,
+          "source_sha256": "1db6b033b5078203b4029f9115d8f73f19901c63f1cf287d9e3437ae663f130a",
+          "excerpt_sha256": "f1018bd6269dd41bed85628d0beba0bcf4f6a1d68145b21ba2df046058956c9f"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/objectives.py",
+          "symbol": "geometry_relations",
+          "start_line": 23,
+          "end_line": 31,
+          "source_sha256": "d6e65237a92c30991f8edaa77fd5655c96a572311843dead957d16cdac3d7f5d",
+          "excerpt_sha256": "f71db557b45efe86be9766a31968a2cc200c48acae87c5d13c044ce6af9e0993"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/objectives.py",
+          "symbol": "physical_objectives",
+          "start_line": 34,
+          "end_line": 55,
+          "source_sha256": "d6e65237a92c30991f8edaa77fd5655c96a572311843dead957d16cdac3d7f5d",
+          "excerpt_sha256": "2b7d5fb298d8a2c0a283d2ab6341bbab6ffa529a13ced00e3c0982e34bcba0b6"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/07_constraints_refine.md",
+      "title": "权限投影、全序列refine与失败回退",
+      "symbols": [
+        {
+          "file": "hsi/stage3_sequence/constraints.py",
+          "symbol": "project_keyposes",
+          "start_line": 160,
+          "end_line": 173,
+          "source_sha256": "8e009b3bac4dff5c91342e01dbe3391f33b995645c6a66b8e66e422f6b24d2c4",
+          "excerpt_sha256": "5dbf0c68126de04d16de3cc167e77899ee2ee18116f27a862ffed66ba894c1f0"
+        },
+        {
+          "file": "hsi/stage3_sequence/constraints.py",
+          "symbol": "free_dof_mask",
+          "start_line": 176,
+          "end_line": 183,
+          "source_sha256": "8e009b3bac4dff5c91342e01dbe3391f33b995645c6a66b8e66e422f6b24d2c4",
+          "excerpt_sha256": "574d04653699720185ed6bcfef2f8325e0b16535bdcec6002395227b7470f967"
+        },
+        {
+          "file": "hsi/stage3_sequence/objectives.py",
+          "symbol": "projected_motion",
+          "start_line": 41,
+          "end_line": 48,
+          "source_sha256": "4b1368a449cffd4d757c91819ff967ca052a7de0d702d2c68291100cb0e8a7f8",
+          "excerpt_sha256": "2522a36c2b8ed062d0cd9a2d70eb5b6224e6ef098602d190aa270ece02f3e65e"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/refine.py",
+          "symbol": "_event_terms",
+          "start_line": 142,
+          "end_line": 147,
+          "source_sha256": "ccf8435655ca50503a052329605694945cba13a14eeb031ca47b3870b2601cc5",
+          "excerpt_sha256": "ebccb1e14427f2d8d118502a7d074765b97c5bad26c93023828a9a974c81bc18"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/refine.py",
+          "symbol": "_foot_slip",
+          "start_line": 150,
+          "end_line": 154,
+          "source_sha256": "ccf8435655ca50503a052329605694945cba13a14eeb031ca47b3870b2601cc5",
+          "excerpt_sha256": "2dfd5a9d0997196760efa14fdff303439ad910baa6ed13f425099317b4e28bff"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/refine.py",
+          "symbol": "_evaluate",
+          "start_line": 171,
+          "end_line": 227,
+          "source_sha256": "ccf8435655ca50503a052329605694945cba13a14eeb031ca47b3870b2601cc5",
+          "excerpt_sha256": "0a6700859c6dbf6963ea1b0b83cb0c53cb211d55c2b49b7871a247dfb47252ad"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/refine.py",
+          "symbol": "_rejections",
+          "start_line": 244,
+          "end_line": 266,
+          "source_sha256": "ccf8435655ca50503a052329605694945cba13a14eeb031ca47b3870b2601cc5",
+          "excerpt_sha256": "ee99fb0eaf1feebb001b5d1a64bfe19af1771ddef714de753638b9366e90a9e0"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/refine.py",
+          "symbol": "refine_motion",
+          "start_line": 300,
+          "end_line": 396,
+          "source_sha256": "ccf8435655ca50503a052329605694945cba13a14eeb031ca47b3870b2601cc5",
+          "excerpt_sha256": "8857c1eac606bf6f15ef8b785cc6cf4547ee64a61f9d4ef832a56d61fcc9e81c"
+        },
+        {
+          "file": "hsi/stage3_sequence/constraints.py",
+          "symbol": "extract_keyposes",
+          "start_line": 152,
+          "end_line": 157,
+          "source_sha256": "8e009b3bac4dff5c91342e01dbe3391f33b995645c6a66b8e66e422f6b24d2c4",
+          "excerpt_sha256": "424edc7be3ffec5bebca3dcffa1bd0a2409a1af728cc75e9df3956f260476549"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/08_training.md",
+      "title": "联合训练损失与真实运动监督",
+      "symbols": [
+        {
+          "file": "hsi/stage3_joint/training.py",
+          "symbol": "JointLossConfig",
+          "start_line": 26,
+          "end_line": 50,
+          "source_sha256": "ef3c7012e8c5a3e008268603ee466d72cf0784da62e05ddba1f358184a30d1e0",
+          "excerpt_sha256": "e58eb1718e6cf07d6ab88a4863bb8e5320eeea936246bdb7d4fd8b556a65db0d"
+        },
+        {
+          "file": "hsi/stage3_joint/training.py",
+          "symbol": "masked_contact_loss",
+          "start_line": 78,
+          "end_line": 86,
+          "source_sha256": "ef3c7012e8c5a3e008268603ee466d72cf0784da62e05ddba1f358184a30d1e0",
+          "excerpt_sha256": "f49a30aa66a0f50c10ebcc88ae42304b5556401d1796b9065ff4b23ca9423c91"
+        },
+        {
+          "file": "hsi/stage3_joint/training.py",
+          "symbol": "derivative_losses",
+          "start_line": 89,
+          "end_line": 101,
+          "source_sha256": "ef3c7012e8c5a3e008268603ee466d72cf0784da62e05ddba1f358184a30d1e0",
+          "excerpt_sha256": "254cd003e1923712ec6c0f5a0ed8f3eda817f74bf838a7b140bfa785ade2f84f"
+        },
+        {
+          "file": "hsi/stage3_joint/training.py",
+          "symbol": "perturb_allowed_keyposes",
+          "start_line": 122,
+          "end_line": 144,
+          "source_sha256": "ef3c7012e8c5a3e008268603ee466d72cf0784da62e05ddba1f358184a30d1e0",
+          "excerpt_sha256": "ec9f1c3f0d39fe818d2fd544cc7cbb3dba9d6b4dd7a0846a6233d6c665c63beb"
+        },
+        {
+          "file": "hsi/stage3_joint/training.py",
+          "symbol": "GeometryCache",
+          "start_line": 53,
+          "end_line": 75,
+          "source_sha256": "ef3c7012e8c5a3e008268603ee466d72cf0784da62e05ddba1f358184a30d1e0",
+          "excerpt_sha256": "68cfe75a3fea5036982315f73bb7d1692f332655559f05eb6273fecd64ea35c2"
+        },
+        {
+          "file": "hsi/stage3_joint/refine.py",
+          "symbol": "mesh_in_chunks",
+          "start_line": 98,
+          "end_line": 127,
+          "source_sha256": "81db7567fb31ec94b548a3165637dda1d5033b2e3f398ab5197991785f760f25",
+          "excerpt_sha256": "de736c8ea7bfe68b534a42833b3439b1747b2e637a9686a287265c95f049e654"
+        },
+        {
+          "file": "hsi/stage3_joint_v2/training.py",
+          "symbol": "joint_training_loss",
+          "start_line": 23,
+          "end_line": 127,
+          "source_sha256": "852a93faf42b70a1b93a9b2421e965fed3a31809e2344fca365e70227ba3e08d",
+          "excerpt_sha256": "f355df220db8c843e4a955e0a1da8db9ee66365682d6fa383aeeb56c17decbcc"
+        }
+      ]
+    },
+    {
+      "file": "excerpts/09_data_condition.md",
+      "title": "LINGO动作与无时间戳条件的构造",
+      "symbols": [
+        {
+          "file": "hsi/stage3_joint/data.py",
+          "symbol": "make_condition",
+          "start_line": 185,
+          "end_line": 271,
+          "source_sha256": "c20e8a3d1090cbaabc8828b0fbd9b67747daf6582988c2343dc54c3614773dc9",
+          "excerpt_sha256": "cfef53c219f10ea8a5d1c1292f47184068b577d6a728ca086361de6a7c8e6808"
+        },
+        {
+          "file": "hsi/stage3_joint/motion_data.py",
+          "symbol": "make_motion_condition",
+          "start_line": 133,
+          "end_line": 186,
+          "source_sha256": "05cb7da36ce41d04e6735ba53348dd75a7774360a661530df287f2c87cfbab19",
+          "excerpt_sha256": "3b1dff130a35931f7b07d741a409da901f9d170f5eb618a8b9b1b65993e8739e"
+        },
+        {
+          "file": "hsi/stage3_joint/data.py",
+          "symbol": "JointBatch",
+          "start_line": 307,
+          "end_line": 316,
+          "source_sha256": "c20e8a3d1090cbaabc8828b0fbd9b67747daf6582988c2343dc54c3614773dc9",
+          "excerpt_sha256": "9e105319f0a2f2f9e5193151921a314aec478ad49cd0eb1059778d700f1e171b"
+        },
+        {
+          "file": "hsi/stage3_joint/corpus.py",
+          "symbol": "JointCorpus",
+          "start_line": 13,
+          "end_line": 53,
+          "source_sha256": "cfc4fb331900aa00a3485504124db33826a98c6ec7c1d7711861b1cabf64335e",
+          "excerpt_sha256": "d626c8f778447513cca04b388c671e2e95328bd84f5ec269b97a8a118328bbff"
+        }
+      ]
+    }
+  ]
+}
