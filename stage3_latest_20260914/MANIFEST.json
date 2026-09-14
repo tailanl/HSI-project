@@ -1,0 +1,440 @@
+[
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/export_stage12.py",
+    "destination": "stage3/export_stage12.py",
+    "bytes": 3068,
+    "sha256": "13dcde597e894320c7f9d35245b148382372b7afb070597aa3239a32b48a62ef"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/exact_heightmap.py",
+    "destination": "stage3/exact_heightmap.py",
+    "bytes": 1535,
+    "sha256": "b853fddec898a9053524c03283c7c84de4c91c6c219d9d94df83a6f418b0ec3a"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/reference_sdf.py",
+    "destination": "stage3/reference_sdf.py",
+    "bytes": 6836,
+    "sha256": "f2dbc164f0c30ca013a0778ea27493a063c3b448913465cefb1c1c3d550f8f30"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/pd_sdf_filter.py",
+    "destination": "stage3/pd_sdf_filter.py",
+    "bytes": 6388,
+    "sha256": "41b438aaf874d9dc8b6e8b5bdc2b509852c741eaa7bbb4e06160049b56a9d073"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/pd_sdf_filter_v2.py",
+    "destination": "stage3/pd_sdf_filter_v2.py",
+    "bytes": 2373,
+    "sha256": "32bafbd816ee3f5ee32838efe2b54c073416200d2cb784848a28dc0e61fd494b"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/rerun_state_guarded_sdf.py",
+    "destination": "stage3/rerun_state_guarded_sdf.py",
+    "bytes": 3176,
+    "sha256": "c6b585ba74364b6a5ab755915f66886db21375d8a19614044db3829542677f63"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/run_release_rollout.py",
+    "destination": "stage3/unihsi_probe/run_release_rollout.py",
+    "bytes": 21370,
+    "sha256": "56f15e9f485c0fcc5ab85343fddcddd3c635332e81b8235fe25ebf43d27b1f51"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/run_stage12_transfer_v3.py",
+    "destination": "stage3/unihsi_probe/run_stage12_transfer_v3.py",
+    "bytes": 29109,
+    "sha256": "8b8740004a7e1fff67abb64bcaeb4e7b4c251af4ef48b6cf483ae9d2b151c94f"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/STAGE12_ADAPTER_BOUNDARY.md",
+    "destination": "stage3/unihsi_probe/STAGE12_ADAPTER_BOUNDARY.md",
+    "bytes": 6581,
+    "sha256": "337b43db2ed93e301d65066f705b868af7e50051447ed2e1a5984fce903becda"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/closd_probe/run_closd_smoke.py",
+    "destination": "stage3/closd_probe/run_closd_smoke.py",
+    "bytes": 17964,
+    "sha256": "b833290702a75929d514f95266895dc6629ab6001af3d9a77a1b1efe8244a647"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/closd_probe/run_closd_convex_sdf.py",
+    "destination": "stage3/closd_probe/run_closd_convex_sdf.py",
+    "bytes": 6847,
+    "sha256": "beb895c45bba8a5fb523dfa67dc6cde337f432194f3fb37b2fab8b54a4b44764"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/closd_probe/convex_reference_sdf.py",
+    "destination": "stage3/closd_probe/convex_reference_sdf.py",
+    "bytes": 6407,
+    "sha256": "7c85c850040be9ecb7b976821ce47c3977e7cc4703085b2f75f6ab7f8acac2c9"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/LICENSE",
+    "destination": "networks/closd/LICENSE",
+    "bytes": 1066,
+    "sha256": "ca343fb98e6f6f29d0506d7da2f8f53b2879824d01bf9786b26626d3394b85a0"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/LICENSE",
+    "destination": "networks/closd/closd/diffusion_planner/LICENSE",
+    "bytes": 1066,
+    "sha256": "2532b783ef384bdcffb6d71af662b41f8365965c943fe5d2174695717d7a90a2"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/model/mdm.py",
+    "destination": "networks/closd/closd/diffusion_planner/model/mdm.py",
+    "bytes": 24356,
+    "sha256": "02a31c94be2623d7b0f3f344a1ef21864f16e5d9ff2addb26c03156bc224a877"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/model/BERT/BERT_encoder.py",
+    "destination": "networks/closd/closd/diffusion_planner/model/BERT/BERT_encoder.py",
+    "bytes": 1040,
+    "sha256": "fcc39668a72d807e4d0329098f11ef5c63789e11e8e3cb181341da62145973e7"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/diffusion/gaussian_diffusion.py",
+    "destination": "networks/closd/closd/diffusion_planner/diffusion/gaussian_diffusion.py",
+    "bytes": 70378,
+    "sha256": "627a2aa80e0079cbd20d13e8681788ff33dcaa879f61419d2e90c525e305dfa8"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/diffusion/respace.py",
+    "destination": "networks/closd/closd/diffusion_planner/diffusion/respace.py",
+    "bytes": 5494,
+    "sha256": "5473f00b83712727d5ebb2ef1a670fa89468d4ef19b4b8ac1593431ff066a241"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/diffusion/nn.py",
+    "destination": "networks/closd/closd/diffusion_planner/diffusion/nn.py",
+    "bytes": 6050,
+    "sha256": "0b742e6fa65c1bbd752467951b4f026ff1e8210f558601e653d3c65b5f83b517"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/diffusion/losses.py",
+    "destination": "networks/closd/closd/diffusion_planner/diffusion/losses.py",
+    "bytes": 2600,
+    "sha256": "86a33188b9419c248e6f338fcb49ef45f2d59a1b9fb108966035f35d8c81b874"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/utils/model_util.py",
+    "destination": "networks/closd/closd/diffusion_planner/utils/model_util.py",
+    "bytes": 5584,
+    "sha256": "21783207b44549134c601b442671995e66952636d89674893e8ad7511a4b21c4"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/utils/sampler_util.py",
+    "destination": "networks/closd/closd/diffusion_planner/utils/sampler_util.py",
+    "bytes": 2467,
+    "sha256": "c362cca60f5d9304e04bc3409870a44887d87bb487341992a82fe8f806086926"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/utils/cond_util.py",
+    "destination": "networks/closd/closd/diffusion_planner/utils/cond_util.py",
+    "bytes": 3641,
+    "sha256": "0fe7576465a01a0b89ba954f17475910062f6776d757f6580275ecc160dd8aca"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/diffusion_planner/utils/misc.py",
+    "destination": "networks/closd/closd/diffusion_planner/utils/misc.py",
+    "bytes": 2602,
+    "sha256": "d8ca8a35f2796a03e9f48154a01076acedb2735e8c65efa68496e5b62ecd8d8c"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/learning/amp_network_builder.py",
+    "destination": "networks/closd/closd/learning/amp_network_builder.py",
+    "bytes": 9491,
+    "sha256": "54dab63a3d3701bddcebd01972dc730eacca5b9f71c671008ef596ded62d116e"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/learning/network_builder.py",
+    "destination": "networks/closd/closd/learning/network_builder.py",
+    "bytes": 42955,
+    "sha256": "995a79d09c6332fffdcb60ad1c1e160873915fb203bd7fd4cc384fd06bd5c49d"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/utils/running_mean_std.py",
+    "destination": "networks/closd/closd/utils/running_mean_std.py",
+    "bytes": 4745,
+    "sha256": "0eb84978336051b26887860cbf8fec843e2e3228026bc9a546e77b234ea4359b"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/closd.py",
+    "destination": "networks/closd/closd/env/tasks/closd.py",
+    "bytes": 43608,
+    "sha256": "dff1ca9bfb15c3058914c326cba83a07f69cd91952cd4e03ecfe1ad3d391e394"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/closd_task.py",
+    "destination": "networks/closd/closd/env/tasks/closd_task.py",
+    "bytes": 16460,
+    "sha256": "3f7495823de7137edec7fb23bb2298619008379af282fa0bad0132bb4eba53c8"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/closd_multitask.py",
+    "destination": "networks/closd/closd/env/tasks/closd_multitask.py",
+    "bytes": 22536,
+    "sha256": "9b75f2d9c757c399b3c51bb207838d49d1928d9473f992b72b74363a8938084f"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/humanoid_im.py",
+    "destination": "networks/closd/closd/env/tasks/humanoid_im.py",
+    "bytes": 88785,
+    "sha256": "022f21a566dad25db537ac0b36ed8faa7eee0fb2819adc34108fe5a9cd5571cf"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/humanoid_amp.py",
+    "destination": "networks/closd/closd/env/tasks/humanoid_amp.py",
+    "bytes": 52660,
+    "sha256": "faf14ee9ad9b38a53868cd2d34782ef867de6d38b18ba1646f91e26b2f509948"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/humanoid_amp_task.py",
+    "destination": "networks/closd/closd/env/tasks/humanoid_amp_task.py",
+    "bytes": 4366,
+    "sha256": "9c9d5c4904db21b6fa5fff037ac66ef4c604ffc5a0d6ea5714a13a3f94ac3e32"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/humanoid.py",
+    "destination": "networks/closd/closd/env/tasks/humanoid.py",
+    "bytes": 88452,
+    "sha256": "ac278f0789ec84a708b212e6f30e5f58d132da80388c067569928e34c60751ba"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/env/tasks/base_task.py",
+    "destination": "networks/closd/closd/env/tasks/base_task.py",
+    "bytes": 35687,
+    "sha256": "c059de6fec5a67e62073db3287cc73166d908b5b51aa0e5784a4f0a739cf6e42"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/README.md",
+    "destination": "networks/unihsi/README.md",
+    "bytes": 7619,
+    "sha256": "15d55e83eb4cc492cdc6dd1fa7eb5da722b6c9f2c284bb944eac49f9aecacb47"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/learning/amp_network_builder.py",
+    "destination": "networks/unihsi/unihsi/learning/amp_network_builder.py",
+    "bytes": 11526,
+    "sha256": "40ce112735277d61bc9e92f344a912bc4134c44f8d4112860283f4df4fcf0809"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/env/tasks/unihsi_scannet.py",
+    "destination": "networks/unihsi/unihsi/env/tasks/unihsi_scannet.py",
+    "bytes": 42166,
+    "sha256": "12b4f5c3e152c9435278c59f18cbaafb3289f83a2ae4c17c5202f2484f31b759"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/env/tasks/humanoid_amp_task.py",
+    "destination": "networks/unihsi/unihsi/env/tasks/humanoid_amp_task.py",
+    "bytes": 3527,
+    "sha256": "6219aa2aa4b04a54bedd64ceefc5f0b8eea7b4cc32f0f8f479ff7a94ee263744"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/env/tasks/humanoid_amp.py",
+    "destination": "networks/unihsi/unihsi/env/tasks/humanoid_amp.py",
+    "bytes": 19873,
+    "sha256": "0a9144cbe1e23e9207f68e93988fcd0e6f6f3a526342df0f7f6e7ae5de658f12"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/env/tasks/humanoid.py",
+    "destination": "networks/unihsi/unihsi/env/tasks/humanoid.py",
+    "bytes": 33144,
+    "sha256": "ad6176aa5e5580b55739153108a4ad445c9eb94a50fba38288c8166c8e16305a"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/env/tasks/base_task.py",
+    "destination": "networks/unihsi/unihsi/env/tasks/base_task.py",
+    "bytes": 23360,
+    "sha256": "76e0e58d80512a731a72ee0b68a78314e84859d476db6816871565ebbe9fc9fa"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/vendor_rl_games_1_1_4/rl-games-1.1.4/README.md",
+    "destination": "networks/rl_games_core/README.md",
+    "bytes": 4210,
+    "sha256": "2e39a1fedd8e9f0f3ca830a94639ec6c504d330b65982f14a553b1b10cba62bb"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/vendor_rl_games_1_1_4/rl-games-1.1.4/rl_games/algos_torch/network_builder.py",
+    "destination": "networks/rl_games_core/rl_games/algos_torch/network_builder.py",
+    "bytes": 43505,
+    "sha256": "51280c2acdc1de3d7c68369c51e01d1bcafd34947b2fdbb0818ab520a96665c3"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/unihsi_probe/vendor_rl_games_1_1_4/rl-games-1.1.4/rl_games/algos_torch/running_mean_std.py",
+    "destination": "networks/rl_games_core/rl_games/algos_torch/running_mean_std.py",
+    "bytes": 3757,
+    "sha256": "8cfc4ea1ece88db672035082828838bbad4d940c3d8c51dad2103e118d956db4"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/dip_backend.py",
+    "destination": "sdf_motion/base/dip_backend.py",
+    "bytes": 17974,
+    "sha256": "0b8d1f6e34106e66ce9b328a3d984dad5b9d24375674fb82fe0e3887c8f881e7"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/hml_codec.py",
+    "destination": "sdf_motion/base/hml_codec.py",
+    "bytes": 15809,
+    "sha256": "05455bb896fd7ac1065c39d3ff5bb95f60b90869e396c26ce99bd185967fb58d"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/stage12_conditions.py",
+    "destination": "sdf_motion/base/stage12_conditions.py",
+    "bytes": 22716,
+    "sha256": "593d48b6c68424f3d8ee49afdd7034e16a39eb6edf0c9cfe8fa97da729c2f76c"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/sdf_guidance.py",
+    "destination": "sdf_motion/base/sdf_guidance.py",
+    "bytes": 16134,
+    "sha256": "7115af85762c74d4be3cd3c187fe1a98fb75c1d6499009ecb6d0607fd609dfae"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/native_consistency.py",
+    "destination": "sdf_motion/base/native_consistency.py",
+    "bytes": 9820,
+    "sha256": "59f7b6291b9130679536f43d3dfe279a92ea18783c3c0a748ef287693ad4b5b2"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912/code/mesh_realization.py",
+    "destination": "sdf_motion/base/mesh_realization.py",
+    "bytes": 15506,
+    "sha256": "c2f1bfcdcc7e512f5f07dbf55d5c44510f70a341b0810a933cc80b1c8dee9095"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/target_backend.py",
+    "destination": "sdf_motion/target/target_backend.py",
+    "bytes": 8695,
+    "sha256": "7c0a62dd813e6691f471e1878e57c814261d511f883da1dd0cbe914b77607a0c"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/target_coordinates.py",
+    "destination": "sdf_motion/target/target_coordinates.py",
+    "bytes": 9463,
+    "sha256": "37b38d30d55d0ee1c446a8f785a4b9a1b0a0ae8f7b83fb0fd0fd4657fb8484d4"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/generation_conditions.py",
+    "destination": "sdf_motion/target/generation_conditions.py",
+    "bytes": 4347,
+    "sha256": "9bb1fc9e7b55fb5b28038f1ad675b66b4b26fff554dacfcb9f1e21f5d73a2f9e"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/run_target_pilot.py",
+    "destination": "sdf_motion/target/run_target_pilot.py",
+    "bytes": 20234,
+    "sha256": "07a1bb28a92a0b4f22c0845247518f6c62c4beffdb15efd68fe9ca9fe377eaba"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/run_target_keypose_pilot.py",
+    "destination": "sdf_motion/target/run_target_keypose_pilot.py",
+    "bytes": 25195,
+    "sha256": "7e267377a17c261d37e91c80317283133c5fe71e4d2d1e54bd08ac2f6f87fb7f"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/code/guarded_refine.py",
+    "destination": "sdf_motion/target/guarded_refine.py",
+    "bytes": 11760,
+    "sha256": "7fa5230d420d579603914436c16288cfa6c453c7846f9dc866ebf1c41249d92d"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/HSI-project/hsi/common/artifacts.py",
+    "destination": "shared/hsi/common/artifacts.py",
+    "bytes": 4832,
+    "sha256": "fa62291ba67b84e1c60c2ca866a2606b2501562cb7608067e33e51a0def615ab"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/HSI-project/hsi/stage3_sequence/geometry.py",
+    "destination": "shared/hsi/stage3_sequence/geometry.py",
+    "bytes": 22842,
+    "sha256": "a932eecee426528f610e2417b1db021cc6baa2fa9649c48f2260a621ab2907a7"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/HSI-project/hsi/stage3_sequence/constraints.py",
+    "destination": "shared/hsi/stage3_sequence/constraints.py",
+    "bytes": 14464,
+    "sha256": "8e009b3bac4dff5c91342e01dbe3391f33b995645c6a66b8e66e422f6b24d2c4"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/HSI-project/hsi/stage3_sequence/mesh_body.py",
+    "destination": "shared/hsi/stage3_sequence/mesh_body.py",
+    "bytes": 11771,
+    "sha256": "e27720f4772157c4814361acb38d52bab7e0ac02fb58e107b81685595a6f39c8"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/HSI-project/experiments/stage3_upstream_adapter.py",
+    "destination": "shared/experiments/stage3_upstream_adapter.py",
+    "bytes": 31910,
+    "sha256": "a27d66db9d202b3b14e372925f97afbc35875b54411d76024ea1d6e1f8c36725"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/config.yaml",
+    "destination": "configs/closd/config.yaml",
+    "bytes": 851,
+    "sha256": "731256586bfb2dfddf919d379cff4788584680fbda4300a93f80376d6c97cbc1"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/env/closd_base.yaml",
+    "destination": "configs/closd/env/closd_base.yaml",
+    "bytes": 1659,
+    "sha256": "cbf4a00228943b6774b0fd463feee814167d2b479e74f5c342d02cd513800014"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/env/closd_multitask.yaml",
+    "destination": "configs/closd/env/closd_multitask.yaml",
+    "bytes": 860,
+    "sha256": "d67d73b9927dae040bff6d848716e77dba25d4bc5f74616671c9fa4378270c93"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/env/dip/dip_defaults.yaml",
+    "destination": "configs/closd/env/dip/dip_defaults.yaml",
+    "bytes": 1088,
+    "sha256": "5fff4d85411e5b5bac5864a4288c94b0db3a47a8ece19d3ef68304b1ccdb9b59"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/learning/im_big.yaml",
+    "destination": "configs/closd/learning/im_big.yaml",
+    "bytes": 1888,
+    "sha256": "2d463679b41cd0037dc927fb5c0dbd375ba11c8e0eb2f331213b25b9beed505c"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/train/rlg/im_big.yaml",
+    "destination": "configs/closd/train/rlg/im_big.yaml",
+    "bytes": 1880,
+    "sha256": "d430f97513e28a04d6113608a08b1164bc150f0c7bcbc9fe22c8450f1a0bfd11"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/sim/default_sim.yaml",
+    "destination": "configs/closd/sim/default_sim.yaml",
+    "bytes": 533,
+    "sha256": "26db58a5497ae2afe0ae9647915d445b062508de9e1891aea4ae1031216fdbef"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/paper_structure_stage3_20260913/vendor/CLoSD/closd/data/cfg/robot/smpl_humanoid.yaml",
+    "destination": "configs/closd/robot/smpl_humanoid.yaml",
+    "bytes": 576,
+    "sha256": "9f165fcb4b9c5edcf935859cefad770666c42830f968595a8f8be4a7d350e71c"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/data/cfg/train/rlg/amp_humanoid_task_deep_layer.yaml",
+    "destination": "configs/unihsi/train/rlg/amp_humanoid_task_deep_layer.yaml",
+    "bytes": 1722,
+    "sha256": "3b4dabfcddb3f6ff3c0a7fb48472835db0a33c05e73f4a5706cbf052e624bcf9"
+  },
+  {
+    "source": "/home/lzsh2025/workspace/UniHSI/unihsi/data/cfg/humanoid_unified_interaction_scene_1.yaml",
+    "destination": "configs/unihsi/humanoid_unified_interaction_scene_1.yaml",
+    "bytes": 1467,
+    "sha256": "9d226577a1e686081d6cc73c14195a7695c0a698c09b7c84247fc82c1146164d"
+  },
+  {
+    "source": "/home/lzsh2025/kimodo-viser/kimodo_scene_project/agent9/methods/closd_unihsi_sdf_stage3_20260912_v2/weights/multi_target/args.json",
+    "destination": "configs/dip_multi_target/args.json",
+    "bytes": 1686,
+    "sha256": "91d87db86f9c905015c40c7048e194d015081bd680cfebcde2a82ec82b6b7f0d"
+  }
+]

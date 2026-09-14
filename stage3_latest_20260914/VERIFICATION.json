@@ -1,0 +1,12 @@
+{
+  "status": "source_only_copies_sha256_verified",
+  "file_count": 73,
+  "total_bytes": 1118112,
+  "weights_copied": 0,
+  "datasets_copied": 0,
+  "media_copied": 0,
+  "environments_copied": 0,
+  "source_files_modified": false,
+  "inference_performed": false,
+  "standalone_runtime_claimed": false
+}
